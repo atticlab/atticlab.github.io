@@ -1,4 +1,4 @@
-var node_host = "http://136.243.88.106"
+var node_host = "https://eosbp.atticlab.net"
 var favorites = [{
     owner: 'atticlabeosb',
     checked: true,
