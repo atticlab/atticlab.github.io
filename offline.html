@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Secure Offline Voting</title>
+    <script src="./scripts/eos.js" integrity="sha256-gKsHaY211IlExaE4KOHBQd/3HCwiw1k9a4mmzl0L0QM=" crossorigin="anonymous"></script>
+    <style>
+    body {
+        font-family: sans-serif;
+    }
+
+    .strong {
+        display: block;
+        font-weight: bold;
+        font-size: 13px;
+    }
+
+    #main {
+        max-width: 600px;
+        padding: 35px 0;
+        margin: 0 auto;
+    }
+
+    .input {
+        padding: 3px 5px;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .col {
+        width: 33%;
+        float: left;
+    }
+
+    label {
+        display: block;
+    }
+
+    .label {
+        margin-bottom: 10px;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    button {
+        background: #00a900;
+        border: none;
+        padding: 10px 15px;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 2px;
+    }
+
+    button:hover {
+        opacity: 0.85;
+    }
+
+    hr {
+        border: none;
+        border-top: 1px solid #e4e4e4;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <h1>EOS Producer Offline Voting</h1> This html page was generated just for you for <b>simple</b>, <b>secure offline</b> voting for block producer. Paste your account name, and private key, choose block producers and press submit!
+        <br>
+        <br>
+        <form id="form" onsubmit="generateTx(); return false;" autocomplete="off">
+            <input type="hidden" id="stake" value="#STAKE#">
+            <label class="label">
+                <div class="strong">Chain ID</div>
+                <input class="input" disabled="disabled" id="chain_id" name="chain_id" value="#CHAINID#">
+            </label>
+            <label class="label">
+                <div class="strong">Block Num</div>
+                <input class="input" disabled="disabled" id="block_num" name="block_num" value="#BLOCKNUM#">
+            </label>
+            <label class="label">
+                <div class="strong">Block Prefix</div>
+                <input class="input" disabled="disabled" id="block_prefix" name="block_prefix" value="#BLOCKPREFIX#">
+            </label>
+            <label class="label">
+                <div class="strong">Account Name</div>
+                <input class="input" disabled="disabled" id="account_name" name="account_name" value="#ACCOUNT#">
+            </label>
+            <label class="label">
+                <div class="strong">Private Key</div>
+                <input autocomplete="off" class="input" type="password" id="private_key" name="private_key" value="" required="required">
+            </label>
+            <div class="center">
+                <button type="submit">Submit</button>
+                <hr>
+            </div>
+            <div>
+                <div class="col">
+                    <div class="strong">Favorites</div>
+                    #FAV#
+                </div>
+                <div class="col">
+                    <div class="strong">Top 21-100</div>
+                    #FAV100#
+                </div>
+                <div class="col">
+                    <div class="strong">Top 21</div>
+                    #FAV21#
+                </div>
+            </div>
+        </form>
+        <div id="transaction" style="display: none">
+            <div>Generated and signed
+                <var>raw transaction</var>:
+            </div>
+            <textarea id="raw_transaction" cols="75" rows="30"></textarea>
+            <p>Copy or write down the above
+                <var>raw transaction</var> (whitespaces don't matter).</p>
+        </div>
+    </div>
+    <script>
+    function generateTx() {
+        try {
+            var account_name = document.getElementById('account_name').value;
+            var stake = document.getElementById('stake').value;
+            var private_key = document.getElementById('private_key').value;
+            var block_producers = document.getElementsByClassName('bp');
+            var bp = []
+
+            for (var i = 0; i < block_producers.length; i++) {
+                if (block_producers[i].checked) {
+                    bp.push(block_producers[i].value.trim())
+                }
+            }
+
+            bp.sort(
+                function(a, b) {
+                    return parseInt(Eos.modules.format.encodeName(a, false)) - parseInt(Eos.modules.format.encodeName(b, false));
+                }
+            );
+
+            if (bp.length < 1) {
+                throw new Error("Please choose one or more producers")
+            }
+
+            if (bp.length > 30) {
+                throw new Error("Please choose less than 30 producers")
+            }
+
+            var expireInSeconds = 60 * 60; // 1 hour
+            var chainId = document.getElementById('chain_id').value;
+            var block_num = +document.getElementById('block_num').value;
+            var ref_block_num = block_num & 0xFFFF;
+            var ref_block_prefix = +document.getElementById('block_prefix').value;
+
+            var options = {
+                broadcast: false,
+                sign: true,
+                authorization: account_name
+            };
+
+            var headers = {
+                ref_block_num: ref_block_num,
+                ref_block_prefix: ref_block_prefix,
+                expiration: new Date(new Date().getTime() + expireInSeconds * 1000).toISOString().split('.')[0],
+                net_usage_words: 0,
+                max_cpu_usage_ms: 0,
+                delay_sec: 0
+            };
+
+            var EOS = Eos({
+                keyProvider: private_key,
+                transactionHeaders: function(_, callback) {
+                    callback(null, headers)
+                },
+                broadcast: false,
+                sign: true,
+                chainId: chainId,
+                // checkChainId: false - enable after merge of https://github.com/EOSIO/eosjs/pull/179
+            });
+
+            EOS.transaction(
+                    function(tr) {
+
+                        if (stake > 0) {
+                            var s = Math.floor(stake / 2 * 10000) / 10000;
+
+                            tr.delegatebw({
+                                from: account_name,
+                                receiver: account_name,
+                                stake_net_quantity: s + " EOS",
+                                stake_cpu_quantity: s + " EOS",
+                                transfer: 0
+                            })
+                        }
+
+
+                        tr.voteproducer({
+                            'voter': account_name,
+                            'proxy': '',
+                            'producers': bp
+                        });
+                    },
+                    options
+                )
+                .then(function(result) {
+                    document.getElementById('raw_transaction').value = JSON.stringify(result['transaction'], null, "  ");
+                    document.getElementById('transaction').style.display = "block";
+                    document.getElementById('form').style.display = "none";
+                })
+                .catch(function(error) {
+                    alert(error)
+                });
+        } catch (error) {
+            alert(error)
+        }
+    }
+    </script>
+</body>
+
+</html>
