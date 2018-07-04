@@ -23,6 +23,9 @@ var favorites = [{
 }, {
     owner: 'philippinebp',
     checked: true,
+}, {
+    owner: 'eosphereiobp',
+    checked: true,
 }, ]
 
 var app = {
