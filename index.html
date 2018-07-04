@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>EOS Block Producer Secure Voting | Atticlab</title>
+    <meta name="description" content="Quick and secure offline voting for EOS block producers">
+    <link href="./styles/font.css?family=Montserrat:500,800" rel="stylesheet" integrity="sha256-YcQNgwpVNE4hInwu9+WBTSrSrGcyQn5ZaCf1rrfCYM0=" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css?v=1.0" integrity="sha256-IMXlRVR4F8w1jsISif16M1GhbpukY9X/cf4paIatiw8=" crossorigin="anonymous">
+    <!--[if lt IE 9]>
+    <script src="./scripts/html5shiv.js" integrity="sha256-sqQlcOZwgKkBRRn5WvShSsuopOdq9c3U+StqgPiFhHQ=" crossorigin="anonymous"></script>
+    <![endif]-->
+    <script src="./scripts/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="./scripts/eos.js" integrity="sha256-gKsHaY211IlExaE4KOHBQd/3HCwiw1k9a4mmzl0L0QM=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header">
+        EOS BP Voting by Atticlab
+    </div>
+    <div class="container">
+        <div class="loader">
+            <div class="sk-folding-cube">
+                <div class="sk-cube1 sk-cube"></div>
+                <div class="sk-cube2 sk-cube"></div>
+                <div class="sk-cube4 sk-cube"></div>
+                <div class="sk-cube3 sk-cube"></div>
+            </div>
+            <div>An app is loading! Please wait</div>
+        </div>
+        <div class="errors" style="display: none">
+            <div></div>
+            <button class="btn" id="reload">Retry</button>
+        </div>
+        <div class="form" style="display: none">
+            <p>
+                We created this page to make voting for block producers quick and secure.</br>
+                Just follow these 5 simple steps:
+            </p>
+            <div>
+                <div class="heading">Step 1</div>
+                <p>Create a new folder on your PC</p>
+            </div>
+            <div>
+                <div class="heading">Step 2</div>
+                <p>Download <a href="https://github.com/EOSIO/eosjs/releases/download/v14.1.1/eos.js">eos.js v14.1.1</a> script from official EOS github account to this folder</p>
+            </div>
+            <div>
+                <div class="heading">Step 3</div>
+                <p>
+                    Paste your account name into the input below and choose the amount of EOS to delegate (if available).</br>
+                    We'll delegate the chosen amount 50/50 to CPU and NET.</br>
+                    Press 'generate' and save html file into the same folder
+                </p>
+                <div>
+                    <input type="text" id="account" class="input">
+                    <div id="info" style="display: none">
+                        <div id="info-data"></div>
+                        <button class="btn" id="generate">Generate</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="heading">Step 4</div>
+                <p>Submit required fields and click generate. You'll get a signed transaction</p>
+            </div>
+            <div>
+                <div class="heading">Step 5</div>
+                <p>Paste signed transaction to form and press submit</p>
+                <textarea id="txdata" cols="50" rows="10"></textarea>
+                <button class="btn" id="submit">Submit</button>
+            </div>
+            <div class="wrap">
+                <div class="col">
+                    <div class="subheading">Chain ID</div>
+                    <div id="chainid"></div>
+                </div>
+                <div class="col">
+                    <div class="subheading">Block Num</div>
+                    <div id="blocknum"></div>
+                </div>
+                <div class="col">
+                    <div class="subheading">Block Prefix</div>
+                    <div id="blockprefix"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="success" style="display: none">
+            <h2>Voting successful!</h2>
+            <div id="txid"></div>
+        </div>
+    </div>
+    <script src="./scripts/scripts.js" integrity="sha256-iGJZsdzTIW5srk9DtYmzf73xpbRKQxuHU2/gFym4QeY=" crossorigin="anonymous"></script>
+</body>
+
+</html>
