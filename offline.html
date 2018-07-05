@@ -66,6 +66,7 @@
         -webkit-columns: 3;
         -moz-columns: 3;
         list-style: none;
+        text-align: left;
     }
 
     .label {
@@ -79,13 +80,15 @@
 
     button {
         border: none;
-        padding: 10px 15px;
-        font-size: 20px;
+        padding: 8px 30px;
+        font-size: 16px;
         text-transform: uppercase;
         color: #fff;
         cursor: pointer;
         border-radius: 5px;
         background-color: #7fc748;
+        min-width: 150px;
+        font-weight: 800;
     }
 
     button:hover {
@@ -109,7 +112,7 @@
         </div>
         <br>
         <br>
-        <form id="form" onsubmit="generateTx(); return false;" autocomplete="off">
+        <form id="form" onsubmit="generateTx(); return false;" autocomplete="off" class="center">
             <input type="hidden" id="stake" value="#STAKE#">
             <label class="label">
                 <div class="strong">Chain ID</div>
