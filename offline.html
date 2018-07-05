@@ -4,16 +4,42 @@
 <head>
     <meta charset="utf-8">
     <title>Secure Offline Voting</title>
-    <script src="./eos.js" integrity="sha256-gKsHaY211IlExaE4KOHBQd/3HCwiw1k9a4mmzl0L0QM=" crossorigin="anonymous"></script>
+    <script src="./eos.js" integrity="sha256-FSTgn2i5iS3geonhD7AZb58QJuQ4YiWXBnM8BbEmejg=" crossorigin="anonymous"></script>
     <style>
     body {
         font-family: sans-serif;
+        font-size: 20px;
+        color: #343434;
+    }
+
+    #header{
+        position:fixed;
+        height: 40px;
+        display:block;
+        width: 100%;
+        background: #ffffff;
+        z-index:9;
+        color: #555555;
+        padding: 20px 0 0 0;
+        top:0;
+        letter-spacing: 2px;
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .intro {
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 32px;
+        margin-top: 5vw;
+        text-align: center;
     }
 
     .strong {
         display: block;
         font-weight: bold;
-        font-size: 13px;
+        font-size: 18px;
     }
 
     #main {
@@ -26,19 +52,25 @@
         padding: 3px 5px;
         width: 100%;
         max-width: 300px;
-    }
-
-    .col {
-        width: 33%;
-        float: left;
+        border-radius: 5px;
+        border: 1px solid #c5d8d8;
+        background-color: #ffffff;
     }
 
     label {
         display: block;
     }
 
+    ul {
+        columns: 3;
+        -webkit-columns: 3;
+        -moz-columns: 3;
+        list-style: none;
+    }
+
     .label {
         margin-bottom: 10px;
+        padding: 5px;
     }
 
     .center {
@@ -46,14 +78,14 @@
     }
 
     button {
-        background: #00a900;
         border: none;
         padding: 10px 15px;
         font-size: 20px;
         text-transform: uppercase;
         color: #fff;
         cursor: pointer;
-        border-radius: 2px;
+        border-radius: 5px;
+        background-color: #7fc748;
     }
 
     button:hover {
@@ -68,8 +100,13 @@
 </head>
 
 <body>
+<div id="header">EOS Producer Offline Voting</div>
     <div id="main">
-        <h1>EOS Producer Offline Voting</h1> This html page was generated just for you for <b>simple</b>, <b>secure offline</b> voting for block producer. Paste your account name, and private key, choose block producers and press submit!
+        <div class="intro">
+            This html page was generated just for you for <b>simple</b>,
+            <b>secure offline</b> voting for block producer. Paste your account name,
+            and private key, choose block producers and press submit!
+        </div>
         <br>
         <br>
         <form id="form" onsubmit="generateTx(); return false;" autocomplete="off">
@@ -94,23 +131,29 @@
                 <div class="strong">Private Key</div>
                 <input autocomplete="off" class="input" type="password" id="private_key" name="private_key" value="" required="required">
             </label>
-            <div class="center">
-                <button type="submit">Submit</button>
-                <hr>
-            </div>
-            <div>
+            <div class="bp">
                 <div class="col">
                     <div class="strong">Favorites</div>
+                    <ul>
                     #FAV#
+                    </ul>
                 </div>
                 <div class="col">
                     <div class="strong">Top 21-100</div>
+                    <ul>
                     #FAV100#
+                    </ul>
                 </div>
                 <div class="col">
                     <div class="strong">Top 21</div>
+                    <ul>
                     #FAV21#
+                    </ul>
                 </div>
+            </div>
+            <div class="center">
+                <button type="submit">Submit</button>
+                <hr>
             </div>
         </form>
         <div id="transaction" style="display: none">
@@ -142,6 +185,12 @@
                     return parseInt(Eos.modules.format.encodeName(a, false)) - parseInt(Eos.modules.format.encodeName(b, false));
                 }
             );
+
+            bp = bp.filter(function (value, index, self) {
+                return self.indexOf(value) === index;
+            });
+
+            console.log(bp);
 
             if (bp.length < 1) {
                 throw new Error("Please choose one or more producers")

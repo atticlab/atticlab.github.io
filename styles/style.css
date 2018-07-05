@@ -6,34 +6,72 @@
 body {
     /*background:*/
     font-family: 'Montserrat', sans-serif;
-    color: #728f8f;
+    color: #555555;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
 }
 
 .loader {
     padding-top: 150px;
+
 }
 
-.header {
-    background: linear-gradient(to bottom, #bfe3eb, #ebf5ec 100%);
-    text-align: center;
-    font-size: 31px;
-    padding: 20px 0;
-    color: #555;
-    font-weight: 800;
-    margin-bottom: 30px;
+img {
+    margin: 1vw;
 }
 
-.container {
-    margin: 0 auto;
-    max-width: 1170px;
-    text-align: center;
+.intro {
+    color: #a0a0a0;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-bottom: 4vw;
+    margin-top: 4vw;
 }
 
 .heading {
     font-weight: 800;
     color: #333;
-    font-size: 22px;
-    margin-bottom: 15px;
+    font-size: 60px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 1vw;
+}
+
+#header, #footer{
+    position:fixed;
+    height: 60px;
+    display:block;
+    width: 100%;
+    background: #ffffff;
+    z-index:9;
+    text-align:center;
+    color: #555555;
+    padding: 20px 0 0 0;
+}
+
+#header{
+    top:0px;
+    letter-spacing: 2px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#footer{
+    bottom:0px;
+    background-color: #fbfbfb;
+    font-size: 16px;
+    text-align: center;
+    color: #a0a0a0;
+    font-weight: 500;
+}
+
+.block {
+    display: inline-block;
+    text-align: left;
+    max-width: 35vw;
+    margin: 1vw;
 }
 
 a {
@@ -46,7 +84,7 @@ p {
 
 .btn {
     min-width: 150px;
-    background: #00ead4;
+    background: #7fc748;
     border: none;
     padding: 8px 30px;
     text-transform: uppercase;
@@ -66,20 +104,28 @@ button:focus {
 }
 
 .input {
-    padding: 5px 10px;
+    padding: 5px 15px;
     font-size: 18px;
-    border-radius: 3px;
-    border: 1px solid #a9a9a9;
     margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #c5d8d8;
+    background-color: #ffffff;
 }
 
 .input-error {
     border-color: #ffa2a2;
 }
 
+.inline {
+    display: inline;
+}
+
+.align {
+    position: relative;
+}
 
 .btn:hover {
-    background: #00c5b3;
+    opacity: 0.85;
 }
 
 textarea {
@@ -110,13 +156,14 @@ textarea {
     font-weight: 800;
     color: #333;
     font-size: 16px;
-    margin: 15px 0 5px;
 }
 
-.clear {
-    clear: both;
+.centering {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 0 auto;
 }
-
 
 /* Spinner */
 
@@ -227,8 +274,20 @@ textarea {
 }
 
 .nfo{
-    margin: 0 10px 15px;
-    display: inline-block;
+    margin: 0 2px 2px;
+    white-space: nowrap;
+}
+
+h1{
+    font-size: 5em;
+    font-family: arial,helvetica;
+    color: #fff;
+    margin:0;
+    padding:0;
+}
+
+.section{
+    text-align:center;
 }
 
 /** Slider **/
@@ -239,7 +298,7 @@ textarea {
 
 .slider {
     -webkit-appearance: none;
-    width: 100%;
+    width: 90%;
     height: 15px;
     border-radius: 5px;
     background: #d3d3d3;
@@ -255,7 +314,7 @@ textarea {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: #00ead4;
+    background: #7fc748;
     cursor: pointer;
 }
 

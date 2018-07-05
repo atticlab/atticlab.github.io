@@ -85,9 +85,9 @@ var app = {
                 app.accInfo = info;
 
                 var html = '';
-                html += '<span class="nfo"><strong>Cpu Staked: </strong>' + app.accInfo.cpuWeight + '</span>';
-                html += '<span class="nfo"><strong>Net Staked: </strong>' + app.accInfo.netWeight + '</span>';
-                html += '<span class="nfo"><strong>Balance: </strong>' + app.accInfo.balance + '</span>';
+                html += '<div class="nfo"><strong>Cpu Staked: </strong>' + app.accInfo.cpuWeight + '</div>';
+                html += '<div class="nfo"><strong>Net Staked: </strong>' + app.accInfo.netWeight + '</div>';
+                html += '<div class="nfo"><strong>Balance: </strong>' + app.accInfo.balance + '</div>';
 
                 var limit = 10;
                 if (app.accInfo.balance > limit) {
@@ -284,7 +284,12 @@ var app = {
         var html = "";
         for (var i = 0; i < producers.length; i++) {
             var checked = producers[i].checked ? 'checked="checked"' : "";
-            html += '<label><input type="checkbox" ' + checked + ' value="' + producers[i].owner + '" class="bp">' + producers[i].owner + '</label>';
+            if (!checked) {
+                if (favorites.find( (obj) => obj.owner === producers[i].owner)) {
+                    checked = 'checked="checked"';
+                }
+            }
+            html += '<li><input type="checkbox" ' + checked + ' value="' + producers[i].owner + '" class="bp">' + producers[i].owner + '</li>';
         }
 
         return html
