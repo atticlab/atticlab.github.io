@@ -216,7 +216,7 @@ var app = {
                 }
             )
         }, function(e) {
-            app.errors.push("Cannot load chain data: " + e.message);
+            app.errors.push("Cannot load chain data: <br>" + e.message);
         });
     },
     loadTemplate: function() {
@@ -274,10 +274,10 @@ var app = {
                     $(".success").show();
                 },
             ).catch(function(error) {
-                app.errors.push("Error publishing: " + error);
+                app.errors.push("Error publishing: <br>" + error);
             })
         } catch (error) {
-            app.errors.push("Error publishing: " + error);
+            app.errors.push("Error publishing: <br>" + error);
         }
     },
     genProducerHtml: function(producers) {
