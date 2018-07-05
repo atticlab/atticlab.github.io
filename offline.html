@@ -61,6 +61,10 @@
         display: block;
     }
 
+    .bp {
+        margin-top: 60px;
+    }
+
     ul {
         columns: 3;
         -webkit-columns: 3;
@@ -76,6 +80,10 @@
 
     .center {
         text-align: center;
+    }
+
+    #form {
+        margin-top: 60px;
     }
 
     button {
@@ -110,8 +118,7 @@
             <b>secure offline</b> voting for block producer. Paste your account name,
             and private key, choose block producers and press submit!
         </div>
-        <br>
-        <br>
+
         <form id="form" onsubmit="generateTx(); return false;" autocomplete="off" class="center">
             <input type="hidden" id="stake" value="#STAKE#">
             <label class="label">
