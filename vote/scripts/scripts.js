@@ -1,12 +1,10 @@
 var node_host = "https://eosbp.atticlab.net"
+var ii = 0;
 var favorites = [{
     owner: 'atticlabeosb',
     checked: true,
 }, {
     owner: 'cryptolions1',
-    checked: true,
-}, {
-    owner: 'kunablockprd',
     checked: true,
 }, {
     owner: 'tokenika4eos',
@@ -135,6 +133,12 @@ var app = {
             setTimeout(tick, ttl);
         }, ttl);
     },
+    calculateVoteWeight: function () {
+        let timestamp_epoch = 946684800000;
+        let dates_ = (Date.now() / 1000) - (timestamp_epoch / 1000);
+        let weight_ = Math.floor(dates_ / (86400 * 7)) / 52;  //86400 = seconds per day 24*3600
+        return Math.pow(2, weight_);
+    },
     loadProducers: function() {
         $.ajax({
                 type: "POST",
@@ -154,7 +158,16 @@ var app = {
                         return b.total_votes - a.total_votes;
                     });
 
-                    app.producers = p.slice(0, 100);
+                    app.producers = p;
+                    for (let index in app.producers) {
+                        app.producers[index].numVotes = numeral((app.producers[index].total_votes / app.calculateVoteWeight() / 10000).toFixed(0)).format("0,000");
+                        var pos = favorites.find((obj) => obj.owner === app.producers[index].owner);
+                        if (pos) {
+                             favorites[favorites.indexOf(pos)].numVotes = app.producers[index].numVotes;
+                        }
+                    }
+
+                    app.producers = app.producers.slice(0, 100);
                 }
             })
             .fail(function() {
@@ -295,7 +308,8 @@ var app = {
                     isNotFavourite = true;
                 }
             }
-            html += '<li' + (isNotFavourite ? " class=\"favourites\"" : "") + '><input type="checkbox" ' + checked + ' value="' + producers[i].owner + '" class="bp' + (checked ? " " + producers[i].owner : "") + '"' + (checked ? "onchange=\"checkEvent(this)\"" : "") + '> ' + producers[i].owner + '</li>';
+            html += '<li' + (isNotFavourite ? " class=\"favourites\"" : "") + '><input type="checkbox" id="a' + ii + '" ' + checked + ' value="' + producers[i].owner + '" class="bp' + (checked ? " " + producers[i].owner : "") + '"' + (checked ? "onchange=\"checkEvent(this)\"" : "") + '><label class="checklabel" for="a' + ii + '"> '  + producers[i].owner + " - " + producers[i].numVotes + '</label></li>';
+            ii++;
         }
 
         return html
