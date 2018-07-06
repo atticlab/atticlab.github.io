@@ -220,7 +220,7 @@ var app = {
         });
     },
     loadTemplate: function() {
-        $.get("./offline.html")
+        $.get("../offline.html")
             .done(function(data) {
                 app.template = data
             })
