@@ -289,7 +289,7 @@ var app = {
                     checked = 'checked="checked"';
                 }
             }
-            html += '<li><input type="checkbox" ' + checked + ' value="' + producers[i].owner + '" class="bp">' + producers[i].owner + '</li>';
+            html += '<li><input type="checkbox" ' + checked + ' value="' + producers[i].owner + '" class="bp"> ' + producers[i].owner + '</li>';
         }
 
         return html
