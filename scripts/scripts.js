@@ -268,9 +268,9 @@ var app = {
                 function(result) {
                     $(".loader").hide();
                     $(".errors").hide();
-                    $(".form").hide();
+                    $("#section4 .centering").hide();
 
-                    $("#txid").html("Transaction id: " + result.transaction_id)
+                    $("#txid").html("Transaction id: " + result.transaction_id);
                     $(".success").show();
                 },
             ).catch(function(error) {
