@@ -15,8 +15,8 @@ body {
 .loader {
     padding-top: 150px;
     font-size: 22px;
+    text-align: center;
 }
-
 
 img {
     margin: 1vw;
