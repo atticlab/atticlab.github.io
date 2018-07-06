@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="google-site-verification" content="uW5q2AP1HcuU-Mv-JtV8MOsXJbITVZqOAO1NXv3YC_E"/>
+  <link rel="stylesheet" href="/css/main.css">
+  <title>Медиа комната</title>
+  <script src="https://ucarecdn.com/libs/widget/3.3.0/uploadcare.full.min.js" charset="utf-8"></script>
+  <script>
+    UPLOADCARE_PUBLIC_KEY = "595c97390b399f5ec35d";
+    UPLOADCARE_LOCALE_TRANSLATIONS = {
+
+      errors: {
+        'fileType': 'This type of files is not allowed.'
+      },
+
+      dialog: { tabs: { preview: { error: {
+        'fileType': {
+          title: 'Validation error.',
+          text: 'Only .doc, .docx, .pdf and .rtf files can be uploaded.',
+          back: 'Back'
+        }
+      } } } }
+    };
+  </script>
+</head>
+
+<body>
+  <div class="wrapper">
+    
+<div class="vote">
+  <a href="https://atticlab.net/vote">Please vote for us, we need your support to continue offering tools and services!</a>
+  <span class="icon-close vote__icon" id="close-vote"></span>
+</div>
+
+
+    
+<div id="overlay" class="overlay">
+  <nav class="overlay-menu">
+    <ul class="overlay-menu__ul">
+      <li class="overlay-menu__li">
+        <a href="/eos/" class="overlay-menu__link">Attic lab eos</a>
+      </li>
+      <li class="overlay-menu__li">
+        <a href="/ru/" class="overlay-menu__link">Home</a>
+      </li>
+      <li class="overlay-menu__li">
+        <a href="/ru/about/" class="overlay-menu__link">About us</a>
+      </li>
+      <li class="overlay-menu__li">
+        <a href="/ru/our-work/" class="overlay-menu__link">Our work</a>
+      </li>
+      <li class="overlay-menu__li">
+        <a href="/ru/media-room/" class="overlay-menu__link">Media room</a>
+      </li>
+      <li class="overlay-menu__li">
+        <a href="/ru/contact-us/" class="overlay-menu__link">Contact us</a>
+      </li>
+    </ul>
+    <div class="overlay-menu__socials">
+      <a href="https://www.linkedin.com/in/attic-lab-5ab9a2129/" target="_blank">Linkedin</a>
+      <a href="https://www.facebook.com/atticlab/" target="_blank">Facebook</a>
+    </div>
+  </nav>
+</div>
+
+
+    
+<header class="header header--white">
+  <div class="container">
+    <div class="logo">
+      <a href="/ru/" class="logo__link">
+        Atticlab
+      </a>
+    </div>
+    <nav class="nav header__nav">
+      <a href="/ru/eos/" class="nav__link">
+        Attic lab eos
+      </a>
+      <a href="/ru/" class="nav__link">
+        Главная
+      </a>
+      <a href="/ru/about/" class="nav__link">
+        О нас
+      </a>
+      <a href="/ru/our-work/" class="nav__link">
+        Наши проекты
+      </a>
+      <a href="/ru/media-room/" class="nav__link">
+        Медиа
+      </a>
+      <a href="/ru/contact-us/" class="nav__link">
+        Свяжитесь с нами
+      </a>
+    </nav>
+    
+    <div id="toggle" class="btn-container">
+      <span class="span toggle__top"></span>
+      <span class="span toggle__middle"></span>
+      <span class="span toggle__bottom"></span>
+    </div>
+  </div>
+</header>
+
+
+    <main class="media-room">
+      <div class="container pos-rel">
+        <div class="threeD-txt threeD-txt--media-room">News</div>
+        <div class="tabs">
+          <nav class="nav b-nav" role="tablist">
+            <a
+              href="#news"
+              class="nav-link nav-tab active"
+              id="news-tab"
+              data-toggle="tab"
+              role="tab"
+              aria-controls="news"
+              aria-selected="true"
+            >
+              News
+            </a>
+
+            <a
+              href="#media"
+              class="nav-link nav-tab"
+              id="media-tab"
+              data-toggle="tab"
+              role="tab"
+              aria-controls="media"
+              aria-selected="false"
+            >
+              Media
+            </a>
+          </nav>
+        </div>
+
+        <section class="media-room__content">
+          <div class="tab-content">
+            <div
+              class="tab-pane fade show active"
+              id="news"
+              role="tabpanel"
+              aria-labelledby="news-tab"
+            >
+              <div class="row" id="row-news">
+                
+              </div>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="media"
+              role="tabpanel"
+              aria-labelledby="media-tab"
+            >
+              <div class="row" id="row-media">
+                
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col text-center">
+                <div class="show-more" tabindex="0" id="show-more-btn" data-type="news">
+                  <span class="icon-refresh"></span>
+                  <span class="show-more__txt">Show more</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    
+<footer class="footer">
+  <div class="pattern"></div>
+  <div class="container">
+    <div class="footer__logo">
+      <img src="/img/logo-footer.png" alt="Atticlab" class="footer__img">
+    </div>
+    <nav class="nav footer__nav">
+      <a href="/eos/" class="nav__link">
+        Attic lab eos
+      </a>
+      <a href="/ru/" class="nav__link">
+        Главная
+      </a>
+      <a href="/ru/about/" class="nav__link">
+        О нас
+      </a>
+      <a href="/ru/our-work/" class="nav__link">
+        Наши проекты
+      </a>
+      <a href="/ru/media-room/" class="nav__link">
+        Медиа
+      </a>
+      <a href="/ru/contact-us/" class="nav__link">
+        Свяжитесь с нами
+      </a>
+    </nav>
+    <a href="/ru/about/" class="btn">Присоединяйтесь к нам</a>
+    <div class="footer__copyright">
+      <span class="line"></span>
+      <span>© 2018. Atticlab. All Rights Reserved.</span>
+      <span class="line"></span>
+    </div>
+    <div class="footer__contacts">
+      <a href="tel:+38 (068) 830-26-54" class="footer__phone">
+        +380 (68) 830-26-54
+      </a>
+      <a href="mailto:inbox@atticlab.net" class="footer__mail">
+        inbox@atticlab.net
+      </a>
+    </div>
+    <nav class="footer__socials">
+      <a href="https://steemit.com/@attic-lab"
+         target="_blank" class="footer__socials-link">
+        <span class="icon-steemit"></span>
+      </a><a
+         href="https://www.facebook.com/atticlab/"
+         target="_blank" class="footer__socials-link">
+        <span class="icon-fb"></span>
+      </a><a
+         href="https://www.linkedin.com/in/attic-lab-5ab9a2129/"
+         target="_blank" class="footer__socials-link">
+         <span class="icon-in"></span>
+      </a><a
+        href="https://twitter.com/atticlab_it"
+        target="_blank" class="footer__socials-link">
+          <span class="icon-twitter"></span>
+      </a><a
+        href="https://medium.com/@attic.it.lab"
+        target="_blank" class="footer__socials-link">
+          <span class="icon-medium"></span>
+      </a><a
+        href="https://github.com/atticlab/"
+        target="_blank" class="footer__socials-link">
+          <span class="icon-github"></span>
+      </a><a
+        href="https://t.me/joinchat/BZDV4UjSsrANT7wkfvreew"
+        target="_blank" class="footer__socials-link">
+          <span class="icon-telegram"></span>
+          </a>
+    </nav>
+  </div>
+</footer>
+
+  </div>
+  <script src="/js/libs.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

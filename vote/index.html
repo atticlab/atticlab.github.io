@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>EOS Block Producer Secure Voting | Atticlab</title>
+    <meta name="description" content="Quick and secure offline voting for EOS block producers">
+    <link href="./styles/font.css?family=Montserrat:500,800" rel="stylesheet" integrity="sha256-YcQNgwpVNE4hInwu9+WBTSrSrGcyQn5ZaCf1rrfCYM0=" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css" integrity="sha256-gH6DMMG9fHAOqek2cHdtBtDYwnGa3RZ83RN84A4KCco=" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/jquery.fullpage.min.css" integrity="sha256-27KRQA6ck6EiKWEkCpHR2NcEeAYnqz8Q5a83PYHh1z0=" crossorigin="anonymous">
+    <!--[if lt IE 9]>
+    <script src="./scripts/html5shiv.js" integrity="sha256-sqQlcOZwgKkBRRn5WvShSsuopOdq9c3U+StqgPiFhHQ=" crossorigin="anonymous"></script>
+    <![endif]-->
+    <script src="./scripts/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="./scripts/eos.js" integrity="sha256-FSTgn2i5iS3geonhD7AZb58QJuQ4YiWXBnM8BbEmejg=" crossorigin="anonymous"></script>
+
+    <script src="./scripts/jquery-ui.min.js" integrity="sha256-KM512VNnjElC30ehFwehXjx1YCHPiQkOPmqnrWtpccM=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./scripts/jquery.fullpage.min.js" integrity="sha256-SNaaqfQPa0XlEqQDrsurQ+Qq5XnhNrwHQXnZpdXlCEI=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4rdPage', '5rdPage'],
+                sectionsColor: ['#fbfbfb', '#fbfbfb', '#fbfbfb', '#fbfbfb', '#fbfbfb'],
+                css3: true,
+                verticalCentered: true,
+                fixedElements: '#header, #footer',
+                lazyLoading: true,
+                keyboardScrolling: true,
+                navigation: true,
+                navigationPosition: 'right',
+                lockAnchors: true
+            });
+        });
+    </script>
+</head>
+
+<body>
+<div class="loader">
+    <div class="sk-folding-cube">
+        <div class="sk-cube1 sk-cube"></div>
+        <div class="sk-cube2 sk-cube"></div>
+        <div class="sk-cube4 sk-cube"></div>
+        <div class="sk-cube3 sk-cube"></div>
+    </div>
+    <div>An app is loading! Please wait</div>
+</div>
+    <div id="header">
+        EOS BP Voting by Atticlab
+        <div class="errors" style="display: none">
+            <div></div>
+            <button class="btn" id="reload">Retry</button>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="col">
+            <div class="subheading">Chain ID</div>
+            <div id="chainid"></div>
+        </div>
+        <div class="col">
+            <div class="subheading">Block Num</div>
+            <div id="blocknum"></div>
+        </div>
+        <div class="col">
+            <div class="subheading">Block Prefix</div>
+            <div id="blockprefix"></div>
+        </div>
+    </div>
+
+    <div id="fullpage" class="form" style="display: none">
+
+        <div class="section " id="section0">
+
+            <p class="intro">
+                We created this page to make voting for block producers quick and secure.
+                Voting for block producers might be time-consuming and requires EOS node installation and configuring.
+                Follow 5 simple steps to generate a voting transaction, sign it offline and publish to EOS blockchain without any software installation
+            </p>
+            <div class="centering">
+                <div class="block">
+                    <p>
+                        <b>1. Create a new folder on your PC/Mac</b> <br>
+                        You'll need to save several files into this
+                        folder later
+                    </p>
+                </div>
+                <img src="images/1.png" alt="image">
+            </div>
+            <p class="beforeFooter">Scroll down for the next step <br> <img src="images/angle-down.png" alt=""></p>
+        </div>
+        <div class="section " id="section1">
+            <div class="centering">
+                <div class="block">
+                    <p>
+                        <b>2. Download <a href="https://github.com/EOSIO/eosjs/releases/download/v14.1.1/eos.js">eos.js v14.1.1</a> and put to folder created in step 1</b><br>
+                        EOS.js is required for secure offline transaction generation.
+                        Make sure you are downloading the script from official
+                        EOS repository and not from any other source
+                    </p>
+                </div>
+                <img src="images/2.png" alt="image">
+            </div>
+            <p class="beforeFooter">Scroll down for the next step <br> <img src="images/angle-down.png" alt=""></p>
+        </div>
+        <div class="section " id="section2">
+            <div class="centering">
+                <div class="block">
+                    <p>
+                        <b>3. Paste your account name into the input</b> <br>
+                        Choose the amount of EOS to delegate (if available),
+                        press 'generate' and save generated HTML file into the folder
+                        created in step 1. The chosen amount will be delegated 50/50
+                        to CPU and NET
+                    </p>
+                </div>
+                <div class="block">
+                    <input type="text" id="account" class="input" placeholder="Paste here" size="25" maxlength="12">
+                    <div id="info" style="display: none">
+                        <div id="info-data"></div>
+                        <button class="btn" id="generate">Generate</button>
+                    </div>
+                </div>
+            </div>
+            <p class="beforeFooter">Scroll down for the next step <br> <img src="images/angle-down.png" alt=""></p>
+        </div>
+        <div class="section " id="section3">
+            <div class="centering">
+                <div class="block">
+                    <p>
+                        <b>4. Open downloaded 'secure-vote.html' file</b><br>
+                        Then fill in the form to vote.
+                        It's better turn internet connection
+                        off while you fill the form for better security. Once you fill
+                        the form, copy signed transaction.
+                    </p>
+                </div>
+                <img src="images/3.png" alt="image">
+            </div>
+            <p class="beforeFooter">Scroll down for the next step <br> <img src="images/angle-down.png" alt=""></p>
+        </div>
+        <div class="section " id="section4">
+            <div class="success" style="display: none">
+                <h2>Voting successful!</h2>
+                <div id="txid"></div>
+            </div>
+            <div class="centering">
+                <div class="block">
+                    <p>
+                        <b>5. Paste signed transaction to the form</b><br>
+                        The transaction we'll be broadcasted
+                        to EOS network. You need to turn internet connection
+                        back ON for this step.
+                    </p>
+                </div>
+                <div class="block">
+                    <textarea id="txdata" cols="50" rows="10" placeholder="Paste here"></textarea>
+                    <button class="btn" id="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./scripts/scripts.js" integrity="GHDK+kTwKYO9KFx21LrTPUhdcLNgJKCaPCmfFmY/8rI=" crossorigin="anonymous"></script>
+</body>
+
+</html>

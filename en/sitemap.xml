@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/about/ceo/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/about/ceo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/about/ceo/"
+                />
+  </url>
+  
+  <url>
+    <loc>/hiring/crypto-spec/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/hiring/crypto-spec/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/hiring/crypto-spec/"
+                />
+  </url>
+  
+  <url>
+    <loc>/eos/eos-prjs/offline-voter/</loc>
+  </url>
+  
+  <url>
+    <loc>/team/vasylchuk/</loc>
+  </url>
+  
+  <url>
+    <loc>/about/director/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/about/director/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/about/director/"
+                />
+  </url>
+  
+  <url>
+    <loc>/eos/eos-prjs/eostat/</loc>
+  </url>
+  
+  <url>
+    <loc>/hiring/middle-front-dev/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/hiring/middle-front-dev/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/hiring/middle-front-dev/"
+                />
+  </url>
+  
+  <url>
+    <loc>/team/cherviakov/</loc>
+  </url>
+  
+  <url>
+    <loc>/hiring/middle-php-go-dev/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/hiring/middle-php-go-dev/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/hiring/middle-php-go-dev/"
+                />
+  </url>
+  
+  <url>
+    <loc>/team/shevchenko/</loc>
+  </url>
+  
+  <url>
+    <loc>/about/pm/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/about/pm/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/about/pm/"
+                />
+  </url>
+  
+  <url>
+    <loc>/about/bch-arch/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/about/bch-arch/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/about/bch-arch/"
+                />
+  </url>
+  
+  <url>
+    <loc>/team/makarov/</loc>
+  </url>
+  
+  <url>
+    <loc>/about/bch-dev/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/about/bch-dev/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/about/bch-dev/"
+                />
+  </url>
+  
+  <url>
+    <loc>/team/opryshko/</loc>
+  </url>
+  
+  <url>
+    <loc>/about/bch-dev-2/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/about/bch-dev-2/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/about/bch-dev-2/"
+                />
+  </url>
+  
+  <url>
+    <loc>/about/bch-dev-3/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/about/bch-dev-3/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/about/bch-dev-3/"
+                />
+  </url>
+  
+  <url>
+    <loc>/about/crypto-researcher/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/about/crypto-researcher/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/about/crypto-researcher/"
+                />
+  </url>
+  
+  <url>
+    <loc>/about/back-dev/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/about/back-dev/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/about/back-dev/"
+                />
+  </url>
+  
+  <url>
+    <loc>/about/front-dev/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/about/front-dev/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/about/front-dev/"
+                />
+  </url>
+  
+  <url>
+    <loc>/about/front-dev-2/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/about/front-dev-2/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/about/front-dev-2/"
+                />
+  </url>
+  
+  <url>
+    <loc>/about/designer/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/about/designer/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/about/designer/"
+                />
+  </url>
+  
+  <url>
+    <loc>/news/five-reasons/</loc>
+    <lastmod>2018-07-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/media/eos-venezuela/</loc>
+    <lastmod>2018-07-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/news/eos-io-algorithm/</loc>
+    <lastmod>2018-07-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/news/eos-node-linux/</loc>
+    <lastmod>2018-06-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/news/eos/</loc>
+    <lastmod>2018-06-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/news/new-atticlab-design/</loc>
+    <lastmod>2018-06-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/our-work/bonex/</loc>
+    <lastmod>2018-06-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/news/iso/</loc>
+    <lastmod>2018-06-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/news/attic-announces-eos/</loc>
+    <lastmod>2018-06-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/news/cryptagio-launch/</loc>
+    <lastmod>2018-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/news/register-eos-tokens/</loc>
+    <lastmod>2018-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/contact-us/</loc>
+    <lastmod>2018-05-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/contact-us/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/contact-us/"
+                />
+  </url>
+  
+  <url>
+    <loc>/eos/</loc>
+    <lastmod>2018-05-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/ownership/</loc>
+    <lastmod>2018-05-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/media-room/</loc>
+    <lastmod>2018-05-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/media-room/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/media-room/"
+                />
+  </url>
+  
+  <url>
+    <loc>/media/fintech-in-ua/</loc>
+    <lastmod>2018-05-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/media/fintech-report/</loc>
+    <lastmod>2018-02-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/our-work/cryptagio/</loc>
+    <lastmod>2018-02-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/our-work/cryptagio/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/our-work/cryptagio/"
+                />
+  </url>
+  
+  <url>
+    <loc>/media/puscha-voditsa-2/</loc>
+    <lastmod>2017-08-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/media/puscha-voditsa/</loc>
+    <lastmod>2017-08-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/media/crypto-coffee/</loc>
+    <lastmod>2017-08-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/media/summer-cafe/</loc>
+    <lastmod>2017-08-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/our-work/humaniq/</loc>
+    <lastmod>2017-08-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/our-work/humaniq/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/our-work/humaniq/"
+                />
+  </url>
+  
+  <url>
+    <loc>/our-work/openbankit/</loc>
+    <lastmod>2017-01-19T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/our-work/openbankit/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/our-work/openbankit/"
+                />
+  </url>
+  
+  <url>
+    <loc>/our-work/nat-crypto/</loc>
+    <lastmod>2016-12-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/our-work/nat-crypto/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/our-work/nat-crypto/"
+                />
+  </url>
+  
+  <url>
+    <loc>/our-work/smartmoney/</loc>
+    <lastmod>2016-10-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/our-work/smartmoney/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/our-work/smartmoney/"
+                />
+  </url>
+  
+  <url>
+    <loc>/media/buy-for-btc/</loc>
+    <lastmod>2015-11-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/about/"
+                />
+  </url>
+  
+  <url>
+    <loc>/eos/eos-prjs/eos-wallet/</loc>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>/eos/eos-prjs/eoscanner/</loc>
+  </url>
+  
+  <url>
+    <loc>/hiring/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/hiring/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/hiring/"
+                />
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2018-07-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/"
+                />
+  </url>
+  
+  <url>
+    <loc>/team/oleshko/</loc>
+  </url>
+  
+  <url>
+    <loc>/media/</loc>
+    <lastmod>2018-07-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/news/</loc>
+    <lastmod>2018-07-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/our-work/</loc>
+    <lastmod>2018-06-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/our-work/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/our-work/"
+                />
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>/team/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

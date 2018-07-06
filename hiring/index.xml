@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hirings on Home | Atticlab</title>
+    <link>/hiring/</link>
+    <description>Recent content in Hirings on Home | Atticlab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/hiring/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cryptography specialist</title>
+      <link>/hiring/crypto-spec/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hiring/crypto-spec/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Middle Frontend Developer</title>
+      <link>/hiring/middle-front-dev/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hiring/middle-front-dev/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Middle PHP/Go Developer</title>
+      <link>/hiring/middle-php-go-dev/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hiring/middle-php-go-dev/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

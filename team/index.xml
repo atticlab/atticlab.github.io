@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Teams on Home | Atticlab</title>
+    <link>/team/</link>
+    <description>Recent content in Teams on Home | Atticlab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/team/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sergei Vasylchuk</title>
+      <link>/team/vasylchuk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/team/vasylchuk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stanislav Cherviakov</title>
+      <link>/team/cherviakov/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/team/cherviakov/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Natalia Shevchenko</title>
+      <link>/team/shevchenko/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/team/shevchenko/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vladyslav Makarov</title>
+      <link>/team/makarov/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/team/makarov/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bohdan Opryshko</title>
+      <link>/team/opryshko/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/team/opryshko/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Konstantin Oleshko</title>
+      <link>/team/oleshko/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/team/oleshko/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

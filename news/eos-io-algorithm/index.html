@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/css/main.css">
+  <title>News article</title>
+</head>
+<body>
+  <div class="wrapper">
+    
+<div class="vote">
+  <a href="https://atticlab.net/vote">Please vote for us, we need your support to continue offering tools and services!</a>
+  <span class="icon-close vote__icon" id="close-vote"></span>
+</div>
+
+    
+    
+<div id="overlay" class="overlay">
+  <nav class="overlay-menu">
+    <ul class="overlay-menu__ul">
+      <li class="overlay-menu__li">
+        <a href="/eos/" class="overlay-menu__link">Attic lab eos</a>
+      </li>
+      <li class="overlay-menu__li">
+        <a href="/" class="overlay-menu__link">Home</a>
+      </li>
+      <li class="overlay-menu__li">
+        <a href="/about/" class="overlay-menu__link">About us</a>
+      </li>
+      <li class="overlay-menu__li">
+        <a href="/our-work/" class="overlay-menu__link">Our work</a>
+      </li>
+      <li class="overlay-menu__li">
+        <a href="/media-room/" class="overlay-menu__link">Media room</a>
+      </li>
+      <li class="overlay-menu__li">
+        <a href="/contact-us/" class="overlay-menu__link">Contact us</a>
+      </li>
+    </ul>
+    <div class="overlay-menu__socials">
+      <a href="https://www.linkedin.com/in/attic-lab-5ab9a2129/" target="_blank">Linkedin</a>
+      <a href="https://www.facebook.com/atticlab/" target="_blank">Facebook</a>
+    </div>
+  </nav>
+</div>
+
+
+    
+<header class="header header--white">
+  <div class="container">
+    <div class="logo">
+      <a href="/" class="logo__link">
+        Atticlab
+      </a>
+    </div>
+    <nav class="nav header__nav">
+      <a href="/eos/" class="nav__link">
+        Attic lab eos
+      </a>
+      <a href="/" class="nav__link">
+        Home
+      </a>
+      <a href="/about/" class="nav__link">
+        About us
+      </a>
+      <a href="/our-work/" class="nav__link">
+        Our work
+      </a>
+      <a href="/media-room/" class="nav__link">
+        Media room
+      </a>
+      <a href="/contact-us/" class="nav__link">
+        Contact us
+      </a>
+    </nav>
+    
+    <div id="toggle" class="btn-container">
+      <span class="span toggle__top"></span>
+      <span class="span toggle__middle"></span>
+      <span class="span toggle__bottom"></span>
+    </div>
+  </div>
+</header>
+
+
+    <main class="news-article">
+      <div class="container pos-rel">
+
+        
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item breadcrumb-item--initial"><a href="/media-room/">News</a></li>
+    <li class="breadcrumb-item active" aria-current="page">
+      EOS.IO Consensus Algorithm
+    </li>
+  </ol>
+</nav>
+
+
+        <div class="threeD-txt threeD-txt--news">News</div>
+        <article class="article">
+          <header class="article__header">
+            <h4 class="title article__title">
+              EOS.IO Consensus Algorithm
+            </h4>
+            <div class="news__date">July 2, 2018</div>
+          </header>
+          <section class="article__body">
+            
+
+<p>Since a few questions about EOS are still in the air, Attic Lab created this post to ensure that everything is straightforward and clear in terms of understanding EOS consensus algorithm. Here, we are covering everything from the beginning: what is DPoS and its difference comparing to PoS. selection of block producers, and how the consensus is achieved among block producers. Enjoy!</p>
+
+<p>EOS.IO uses the DPoS (Delegated Proof-of-Stake) consensus algorithm that allows you to create blocks within 0.5 seconds and in addition to DPoS, EOS.IO adds asynchronous Byzantine fault tolerance (aBFT, Byzantine Fault Tolerance) to accelerate the achievement of irreversibility. BFT-DPoS will provide 100% confirmation of the transaction&rsquo;s irreversibility within 1 second.</p>
+
+<p>Comparing to the PoS consensus algorithm, in which token holders vote for the validity of the block, in DPoS, the tokens holders vote for the block producers. The group of producers that received the largest number of votes will be able to collectively organize the generation of blocks. DPoS works faster than most consensus algorithms since block producers compete only at the stage of selecting a group of producers.</p>
+
+<p>Like regular DPoS, BFT-DPoS is divided into two stages: the selection of a group of block producers and the achievement of consensus between them.</p>
+
+<h4 id="selecting-a-group-of-block-producers">Selecting a group of block producers</h4>
+
+<p>Top-21 block producers are selected by continuous voting of EOS token holders.</p>
+
+<ul>
+<li>Each account with EOS tokens is given the opportunity to give 30 votes. Votes can be given in one time, or by adding block producers into your list in turns.</li>
+<li>To vote, token holders need to block some EOS tokens on their account (stake tokens)</li>
+<li>Each vote counts with a &ldquo;power&rdquo; equal to the number of staked tokens (for example: token holder A has 15 EOS tokens on the account and he or she stakes 10, token holder B has 10 tokens and stakes 5, token holder C has 5 and stakes 5. Token holder A votes for X and Y block producers, B votes for Y and Z BPs, and C votes for Z producer. In total, block producer X has one vote with power of 10 EOS, producer Y has 2 votes with 15 EOS,  and producer Z has 2 votes with power of 10 EOS.</li>
+<li>In case of simultaneous voting for producers, the repeated sending of votes will cancel the previous one. In case if you want to add alternative producers to the voting list, it is not possible to add producers that already exist in the list.</li>
+<li>In order to unlock staked tokens after sending a vote, you should send an unblock request (system undelegatebw with the required parameters). You can unlock the tokens not earlier than three days after sending the request.</li>
+<li>Voting takes place in a continuous mode. You can vote at any time. You can change your voice at any time. You can vote as many as you want.</li>
+<li>The vote loses its &ldquo;power&rdquo; every week by approximately 1%. Full strength of the vote has only the first week since sending to the network, after 90 days - 85% of initial power, after 1 year - 50%,  after 2 years the voice does not count.
+Example: token holder A staked 100 EOS, he or she gave a vote for X block producer with power of 100 EOS. The first week it will be 100 EOS, at the beginning of the fourth week the weight of the vote will be 97 EOS. If the vote is sent again for the given block producer, the vote weight will be equal to the amount of stacked tokens on the account at the time of sending.</li>
+<li>Votes will be recalculated approximately every two minutes</li>
+</ul>
+
+<h4 id="achieving-consensus-between-block-producers">Achieving consensus between block producers</h4>
+
+<p>The selection of the group of block producers has little effect on the achievement of consensus among the block producers. Therefore, further we assume that all the BPs are selected and are ready to generate blocks.</p>
+
+<p><strong>Conflict resolution.</strong> To solve most problems, it is enough to get agreement of  &gt; ⅔ producers, that is, in the case of standard conditions (in 21 producers) this is a minimum of 15. The BFT algorithm, which is added to DPoS, allows all producers to sign all the blocks. Once the block is signed by at least 15 BPs it will be considered irreversible. It is impossible for the same producer to sign two blocks with the same timestamp or the same block height.</p>
+
+<p><strong>The order of generating blocks.</strong> The first thing block producers agree on is the order in which they will generate the blocks. It is unaccepted that the producer of blocks generates the block in any other time interval which differs from the planned one. Through each 21 block, the order of producers varies. When producers sign a block, they also sign a new order, thus confirming its reliability and preventing the emergence of two different orders. Blocks are produced in rounds of 126, i.e. during one round, one producer is able to generate no more than 6 blocks. At the beginning of each round, the votes are recounted, if the top 21 producers have changed, the replacement occurs.</p>
+
+<p><strong>The time given to the block producer for block generation.</strong> To generate a block, each BP has 0.5 seconds. If the producer does not have time in the given period, then the block is skipped. Also, block producers can be replaced if they miss their turn within 24 hours. The block producer, which was replaced, has the right to return in top21 list if he or she  confirms/sends a notice that it is ready to work.</p>
+
+<p><strong>Forks.</strong> The longest chain of blocks is always selected. Every time an honest block producer sees a chain of blocks that is longer than the rest, he or she switches from the current fork to a longer one. Any other chain cannot be longer if  ⅔ the block producers are honest and generate blocks without failures.</p>
+
+<p><strong>TaPoS.</strong> The EOS.IO software also uses TaPoS, transactions as proof. All transactions include the header hash of the last block and are considered invalid if this block does not exist in the chain. Thus, users sending a transaction confirm the previous block.</p>
+
+<p>Sending a transaction also signals to the network that the funds are in a particular block. This prevents the appearance of the same transactions on another fork, it lowers the risk of fraud inside the blockchain (it is impossible to transfer transactions from another chain of blocks).</p>
+
+<p>At Attic Lab we tried to make sure that all your questions have been answered regarding the EOS consensus algorithm. In this post we covered all main pain points that people might stick to while understanding the DPoS algorithm. If you have any further questions, please ask them in a comment section below or just send us a message in any of listed social media.</p>
+
+<p><a href="https://atticlab.net/">Website</a></p>
+
+<p><a href="https://steemit.com/@attic-lab">Steemit</a></p>
+
+<p><a href="https://www.facebook.com/atticlab">Facebook</a></p>
+
+<p><a href="https://twitter.com/atticlab_it">Twitter</a></p>
+
+<p><a href="https://medium.com/@attic.it.lab">Medium</a></p>
+
+<p><a href="https://github.com/atticlab/">Github</a></p>
+
+<p><a href="https://t.me/joinchat/BZDV4UjSsrANT7wkfvreew">Telegram</a></p>
+
+          </section>
+          <footer class="article__footer">
+            <div class="share">
+              <span class="share__title">Share</span>
+              <span class="share__dash">&#8212;</span>
+              <a href="https://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=&source=" class="share__item" target="_blank">Linkedin</a>
+              <a href="https://www.facebook.com/sharer/sharer.php?u=" class="share__item" target="_blank">Facebook</a>
+            </div>
+          </footer>
+        </article>
+      </div>
+    </main>
+
+
+    
+<footer class="footer">
+  <div class="pattern"></div>
+  <div class="container">
+    <div class="footer__logo">
+      <img src="/img/logo-footer.png" alt="Atticlab" class="footer__img">
+    </div>
+    <nav class="nav footer__nav">
+      <a href="/eos/" class="nav__link">
+        Attic lab eos
+      </a>
+      <a href="/" class="nav__link">
+        Home
+      </a>
+      <a href="/about/" class="nav__link">
+        About us
+      </a>
+      <a href="/our-work/" class="nav__link">
+        Our work
+      </a>
+      <a href="/media-room/" class="nav__link">
+        Media room
+      </a>
+      <a href="/contact-us/" class="nav__link">
+        Contact us
+      </a>
+    </nav>
+    <a href="/about/" class="btn">Join our team</a>
+    <div class="footer__copyright">
+      <span class="line"></span>
+      <span>© 2018. Atticlab. All Rights Reserved.</span>
+      <span class="line"></span>
+    </div>
+    <div class="footer__contacts">
+      <a href="tel:+38 (068) 830-26-54" class="footer__phone">
+        +380 (68) 830-26-54
+      </a>
+      <a href="mailto:inbox@atticlab.net" class="footer__mail">
+        inbox@atticlab.net
+      </a>
+    </div>
+    <nav class="footer__socials">
+      <a href="https://steemit.com/@attic-lab"
+         target="_blank" class="footer__socials-link">
+        <span class="icon-steemit"></span>
+      </a><a
+         href="https://www.facebook.com/atticlab/"
+         target="_blank" class="footer__socials-link">
+        <span class="icon-fb"></span>
+      </a><a
+         href="https://www.linkedin.com/in/attic-lab-5ab9a2129/"
+         target="_blank" class="footer__socials-link">
+         <span class="icon-in"></span>
+      </a><a
+        href="https://twitter.com/atticlab_it"
+        target="_blank" class="footer__socials-link">
+          <span class="icon-twitter"></span>
+      </a><a
+        href="https://medium.com/@attic.it.lab"
+        target="_blank" class="footer__socials-link">
+          <span class="icon-medium"></span>
+      </a><a
+        href="https://github.com/atticlab/"
+        target="_blank" class="footer__socials-link">
+          <span class="icon-github"></span>
+      </a><a
+        href="https://t.me/joinchat/BZDV4UjSsrANT7wkfvreew"
+        target="_blank" class="footer__socials-link">
+          <span class="icon-telegram"></span>
+          </a>
+    </nav>
+  </div>
+</footer>
+
+  </div>
+  <script src="/js/libs.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

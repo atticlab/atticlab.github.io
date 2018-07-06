@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Media on Home | Atticlab</title>
+    <link>/media/</link>
+    <description>Recent content in Media on Home | Atticlab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 Jul 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/media/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>/media/eos-venezuela/</link>
+      <pubDate>Wed, 04 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/media/eos-venezuela/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/media/fintech-in-ua/</link>
+      <pubDate>Fri, 25 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/media/fintech-in-ua/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/media/fintech-report/</link>
+      <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/media/fintech-report/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/media/puscha-voditsa-2/</link>
+      <pubDate>Tue, 29 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/media/puscha-voditsa-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/media/puscha-voditsa/</link>
+      <pubDate>Tue, 29 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/media/puscha-voditsa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/media/crypto-coffee/</link>
+      <pubDate>Mon, 28 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/media/crypto-coffee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/media/summer-cafe/</link>
+      <pubDate>Sat, 26 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/media/summer-cafe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/media/buy-for-btc/</link>
+      <pubDate>Thu, 05 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/media/buy-for-btc/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

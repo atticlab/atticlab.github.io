@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Наша работа on Atticlab</title>
+    <link>/ru/our-work/</link>
+    <description>Recent content in Наша работа on Atticlab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 16 Aug 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/ru/our-work/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Хуманик</title>
+      <link>/ru/our-work/humaniq/</link>
+      <pubDate>Wed, 16 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/ru/our-work/humaniq/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Оупенбанк</title>
+      <link>/ru/our-work/openbankit/</link>
+      <pubDate>Thu, 19 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/ru/our-work/openbankit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Национальная криптовалюта</title>
+      <link>/ru/our-work/nat-crypto/</link>
+      <pubDate>Sat, 03 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/ru/our-work/nat-crypto/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Смартмани</title>
+      <link>/ru/our-work/smartmoney/</link>
+      <pubDate>Wed, 05 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/ru/our-work/smartmoney/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Криптаджио</title>
+      <link>/ru/our-work/cryptagio/</link>
+      <pubDate>Fri, 16 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/ru/our-work/cryptagio/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
