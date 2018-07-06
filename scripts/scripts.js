@@ -232,7 +232,7 @@ var app = {
         var acc = $("#account").val();
         var stake = $('#rangeVal').html()
         if (!stake) {
-            stake = 0
+            stake = 0;
         } else {
             stake = app.eos2float(stake)
         }
