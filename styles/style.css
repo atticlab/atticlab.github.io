@@ -4,7 +4,6 @@
 }
 
 body {
-    /*background:*/
     font-family: 'Montserrat', sans-serif;
     color: #555555;
     font-size: 18px;
@@ -23,13 +22,15 @@ img {
 }
 
 .intro {
-    color: #a0a0a0;
-    line-height: 32px;
+    color: #555555;
     text-align: center;
     position:absolute;
     z-index:9;
     top:5vw;
-    width: 100%;
+    max-width: 45vw;
+    transform: translateX(-50%);
+    left: 50%;
+    font-size: 16px;
 }
 
 #section0, #section1, #section2, #section3, #section4 {
