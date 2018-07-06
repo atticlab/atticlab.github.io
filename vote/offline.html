@@ -149,18 +149,19 @@
         <form id="form" onsubmit="generateTx(); return false;" autocomplete="off" class="center">
             <input type="hidden" id="stake" value="#STAKE#">
             <div class="block">
-                <!--<label class="label">-->
-                    <!--<div class="strong">Chain ID: </div>#CHAINID#-->
-                <!--</label>-->
+                <label class="label" style="display: none">
+                    <div class="strong">Chain ID</div>
+                    <input class="input" disabled="disabled" id="chain_id" name="chain_id" value="#CHAINID#">
+                </label>
+                <label class="label" style="display: none">
+                    <div class="strong">Block Num</div>
+                    <input class="input" disabled="disabled" id="block_num" name="block_num" value="#BLOCKNUM#">
+                </label>
+                <label class="label" style="display: none">
+                    <div class="strong">Block Prefix</div>
+                    <input class="input" disabled="disabled" id="block_prefix" name="block_prefix" value="#BLOCKPREFIX#">
+                </label>
                 <label class="label">
-                    <!--<div class="separated">-->
-                        <!--<div class="strong">Block Num:</div>-->
-                        <!--<br> #BLOCKNUM#-->
-                    <!--</div>-->
-                    <!--<div class="separated">-->
-                        <!--<div class="strong">Block Prefix: </div> <br> #BLOCKPREFIX#-->
-                    <!--</div>-->
-
                         <div class="strong ">Account Name: </div>
                         <input autocomplete="off" class="input" disabled value="#ACCOUNT#">
                 </label>
