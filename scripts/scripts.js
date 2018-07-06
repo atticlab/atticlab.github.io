@@ -153,6 +153,10 @@ var app = {
                     p.sort(function(a, b) {
                         return b.total_votes - a.total_votes;
                     });
+                    console.log(p);
+                    p = p.filter(bp => {
+                       return !favorites.find((obj) => obj.owner === bp.owner);
+                    });
 
                     app.producers = p.slice(0, 100);
                 }
@@ -220,7 +224,7 @@ var app = {
         });
     },
     loadTemplate: function() {
-        $.get("../offline.html")
+        $.get("./offline.html")
             .done(function(data) {
                 app.template = data
             })
@@ -284,11 +288,6 @@ var app = {
         var html = "";
         for (var i = 0; i < producers.length; i++) {
             var checked = producers[i].checked ? 'checked="checked"' : "";
-            if (!checked) {
-                if (favorites.find( (obj) => obj.owner === producers[i].owner)) {
-                    checked = 'checked="checked"';
-                }
-            }
             html += '<li><input type="checkbox" ' + checked + ' value="' + producers[i].owner + '" class="bp"> ' + producers[i].owner + '</li>';
         }
 
