@@ -1,0 +1,47 @@
+{
+  "producer_account_name": "atticlabeosb",
+  "producer_public_key": "EOS7LqudX6Ac4woGwTF9CvQKwrJhg3H7p3pScDoXj1Ws82mMZFQqf",
+  "org": {
+    "candidate_name": "AtticLab",
+    "website": "https://atticlab.net",
+    "code_of_conduct":"https://steemit.com/eos/@attic-lab/attic-lab-eos-block-producer-candidate",
+    "email":"inbox@atticlab.net",
+    "branding":{
+      "logo_256":"https://atticlab.net/atticlab-logo-256.png",
+      "logo_1024":"https://atticlab.net/atticlab-logo-1000.png",
+      "logo_svg":"https://atticlab.net/atticlab-logo-1000.svg"
+    },
+    "location": {
+      "name": "Ukraine",
+      "country": "UA",
+      "latitude": 50.418493,
+      "longitude": 30.517631
+    },
+    "social": {
+      "steemit": "attic-lab",
+      "twitter": "atticlab_it",
+      "youtube": "Attic Lab",
+      "facebook": "atticlab",
+      "github":"atticlab",
+      "reddit": "",
+      "keybase": "",
+      "telegram": "EOS Block Producer Attic Lab",
+      "wechat":""
+    }
+  },
+  "nodes": [
+    {
+      "location": {
+        "name": "Ukraine",
+        "country": "UA",
+        "latitude": 50.418493,
+        "longitude": 30.517631
+      },
+      "is_producer": true,
+      "p2p_endpoint": "eosbp.atticlab.net:9876",
+      "api_endpoint": "http://eosbp.atticlab.net",
+      "bnet_endpoint": "eosbp.atticlab.net:4321",
+      "ssl_endpoint": "https://eosbp.atticlab.net"
+    }
+  ]
+}
