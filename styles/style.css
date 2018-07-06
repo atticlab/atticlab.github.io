@@ -17,6 +17,10 @@ body {
     text-align: center;
 }
 
+.centering > img {
+    width: 17vw;
+}
+
 img {
     margin: 1vw;
 }
