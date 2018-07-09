@@ -27,7 +27,7 @@ function onMouseMove(e) {
   var n = window.innerWidth / 2,
     i = window.innerHeight / 2,
     o = document.getElementsByClassName("threeD-txt--atticlab")[0];
-  mouseX < n && mouseY > i ? (o.style.textShadow = t(1, -1, 10, 40), o.style.transform = "rotate3d(1, 0, 0, -10deg) translateZ(-1px)") : mouseX > n && mouseY > i ? (o.style.textShadow = t(-1, -1, 10, 40), o.style.transform = "rotate3d(1, 0, 0, 10deg) translateZ(-1px)") : mouseX < n && mouseY < i ? (o.style.textShadow = t(1, 1, 10, 40), o.style.transform = "rotate3d(0, 1, 0, -10deg) translateZ(-1px)") : mouseX > n && mouseY < i ? (o.style.textShadow = t(-1, 1, 10, 40), o.style.transform = "rotate3d(0, 1, 0, 10deg) translateZ(-1px)") : o.style.textShadow = t(1, -1, 10, 40)
+  mouseX < n && mouseY > i ? (o.style.textShadow = t(1, -1, 10, 40), o.style.transform = "rotate3d(1, 0, 0, -10deg)") : mouseX > n && mouseY > i ? (o.style.textShadow = t(-1, -1, 10, 40), o.style.transform = "rotate3d(1, 0, 0, 10deg)") : mouseX < n && mouseY < i ? (o.style.textShadow = t(1, 1, 10, 40), o.style.transform = "rotate3d(0, 1, 0, -10deg)") : mouseX > n && mouseY < i ? (o.style.textShadow = t(-1, 1, 10, 40), o.style.transform = "rotate3d(0, 1, 0, 10deg)") : o.style.textShadow = t(1, -1, 10, 40)
 }
 
 function initPattern(e) {
