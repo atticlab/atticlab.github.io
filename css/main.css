@@ -7922,7 +7922,10 @@ body {
   -webkit-animation: rotate 2s ease-in-out alternate infinite;
   animation: rotate 2s ease-in-out alternate infinite;
   position: absolute;
-  z-index: 0
+  z-index: 0;
+  -webkit-transform: translateZ(-1px); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      -ms-transform: translateZ(-1px); /* IE 9 */
+          transform: translateZ(-1px); /* IE 10, Fx 16+, Op 12.1+ */
 }
 
 .threeD-txt:before {
@@ -8585,7 +8588,10 @@ body {
 }
 
 .section-top__txt-wrapper, .threeD-txt--atticlab {
-  z-index: 0;
+  z-index: 4;
+  -webkit-transform: translateZ(1px); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      -ms-transform: translateZ(1px); /* IE 9 */
+          transform: translateZ(1px); /* IE 10, Fx 16+, Op 12.1+ */
   position: relative
 }
 
