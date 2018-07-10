@@ -29,20 +29,21 @@
     }
 
     .intro {
-        font-size: 20px;
+        font-size: 22px;
         font-weight: 500;
-        margin-top: 30px;
+        line-height: 32px;
+        margin-top: 5vw;
         text-align: center;
     }
 
     .strong {
-        display: inline-block;
+        display: block;
         font-weight: bold;
         font-size: 18px;
     }
 
     #main {
-        max-width: 800px;
+        max-width: 600px;
         padding: 35px 0;
         margin: 0 auto;
     }
@@ -58,24 +59,16 @@
 
     label {
         display: block;
-
-    }
-
-    .checklabel {
-        display: inline-block;
-    }
-    label div {
-        float:left;
     }
 
     .col {
-        margin-top: 30px;
+        margin-top: 50px;
     }
 
     ul {
-        columns: 2;
-        -webkit-columns: 2;
-        -moz-columns: 2;
+        columns: 3;
+        -webkit-columns: 3;
+        -moz-columns: 3;
         list-style: none;
         text-align: left;
     }
@@ -83,8 +76,6 @@
     .label {
         margin-bottom: 10px;
         padding: 5px;
-        text-align: right;
-        clear:both;
     }
 
     .center {
@@ -92,7 +83,7 @@
     }
 
     #form {
-        margin-top: 30px;
+        margin-top: 60px;
     }
 
     button {
@@ -106,9 +97,6 @@
         background-color: #7fc748;
         min-width: 150px;
         font-weight: 800;
-        text-align: center;
-        margin: 0 auto;
-        margin-top: 15px;
     }
 
     button:hover {
@@ -122,17 +110,6 @@
 
     li.favourites {
         opacity: 0.5;
-    }
-
-    .block {
-        width: 70%;
-        margin: 0 auto;
-    }
-
-    .separated {
-        width: 33.3%;
-        display: inline-block;
-        text-align: center;
     }
     </style>
 </head>
@@ -148,57 +125,49 @@
 
         <form id="form" onsubmit="generateTx(); return false;" autocomplete="off" class="center">
             <input type="hidden" id="stake" value="#STAKE#">
-            <div class="block">
-                <label class="label" style="display: none">
-                    <div class="strong">Chain ID</div>
-                    <input class="input" disabled="disabled" id="chain_id" name="chain_id" value="#CHAINID#">
-                </label>
-                <label class="label" style="display: none">
-                    <div class="strong">Block Num</div>
-                    <input class="input" disabled="disabled" id="block_num" name="block_num" value="#BLOCKNUM#">
-                </label>
-                <label class="label" style="display: none">
-                    <div class="strong">Block Prefix</div>
-                    <input class="input" disabled="disabled" id="block_prefix" name="block_prefix" value="#BLOCKPREFIX#">
-                </label>
-                <label class="label">
-                        <div class="strong ">Account Name: </div>
-                        <input autocomplete="off" class="input" id="account_name" disabled value="#ACCOUNT#">
-                </label>
-                <label class="label">
-                    <div class="strong">Private Key</div>
-                    <input autocomplete="off" class="input" type="password" id="private_key" name="private_key" value="" required="required">
-                </label>
-            </div>
+            <label class="label">
+                <div class="strong">Chain ID</div>
+                <input class="input" disabled="disabled" id="chain_id" name="chain_id" value="#CHAINID#">
+            </label>
+            <label class="label">
+                <div class="strong">Block Num</div>
+                <input class="input" disabled="disabled" id="block_num" name="block_num" value="#BLOCKNUM#">
+            </label>
+            <label class="label">
+                <div class="strong">Block Prefix</div>
+                <input class="input" disabled="disabled" id="block_prefix" name="block_prefix" value="#BLOCKPREFIX#">
+            </label>
+            <label class="label">
+                <div class="strong">Account Name</div>
+                <input class="input" disabled="disabled" id="account_name" name="account_name" value="#ACCOUNT#">
+            </label>
+            <label class="label">
+                <div class="strong">Private Key</div>
+                <input autocomplete="off" class="input" type="password" id="private_key" name="private_key" value="" required="required">
+            </label>
             <div class="bp">
                 <div class="col">
-                    <div class="strong">Some cool guys</div>
+                    <div class="strong">Our partners</div>
                     <ul>
                     #FAV#
                     </ul>
                 </div>
                 <div class="col">
                     <div class="strong">Top 21-100</div>
-                    <br>
-                    <button id="top21100s" onclick="event.preventDefault(); document.getElementById('top21100').style.display = 'block'; document.getElementById('top21100b').style.display = 'block'; document.getElementById('top21100s').style.display = 'none';">Show all</button>
-                    <ul id="top21100" style="display: none">
+                    <ul>
                     #FAV100#
                     </ul>
-                    <button onclick="event.preventDefault(); document.getElementById('top21100').style.display = 'none'; document.getElementById('top21100b').style.display = 'none'; document.getElementById('top21100s').style.display = 'block';" id="top21100b" style="display: none">Show less</button>
                 </div>
                 <div class="col">
                     <div class="strong">Top 21</div>
-                    <br>
-                    <button id="top21s" onclick="event.preventDefault(); document.getElementById('top21').style.display = 'block'; document.getElementById('top21b').style.display = 'block'; document.getElementById('top21s').style.display = 'none';">Show all</button>
-                    <ul id="top21" style="display: none">
+                    <ul>
                     #FAV21#
                     </ul>
-                    <button onclick="event.preventDefault(); document.getElementById('top21').style.display = 'none'; document.getElementById('top21b').style.display = 'none'; document.getElementById('top21s').style.display = 'block';" id="top21b" style="display: none">Show less</button>
                 </div>
             </div>
-            <hr>
             <div class="center">
-                <button id="sub" type="submit">Submit</button>
+                <button type="submit">Submit</button>
+                <hr>
             </div>
         </form>
         <div id="transaction" style="display: none">
