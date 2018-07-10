@@ -10307,3 +10307,7 @@ body {
     font-size: 16px;
   }
 }
+
+.test {
+  color: transparent;
+}
