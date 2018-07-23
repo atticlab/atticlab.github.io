@@ -38,7 +38,6 @@
         "latitude": 50.418493,
         "longitude": 30.517631
       },
-      "is_producer": false,
       "node_type": "full",
       "p2p_endpoint": "eosbp-0.atticlab.net:9876",
       "api_endpoint": "http://eosbp-0.atticlab.net",
