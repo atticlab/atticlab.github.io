@@ -38,10 +38,31 @@
         "latitude": 50.418493,
         "longitude": 30.517631
       },
-      "node_type": "full",
+      "node_type": "producer",
+      "p2p_endpoint": "",
+      "api_endpoint": "",
+      "ssl_endpoint": ""
+    },
+    {
+      "location": {
+        "name": "Kyiv",
+        "country": "UA",
+        "latitude": 50.418493,
+        "longitude": 30.517631
+      },
+      "node_type": "seed",
       "p2p_endpoint": "eosbp-0.atticlab.net:9876",
-      "api_endpoint": "http://eosbp-0.atticlab.net",
-      "bnet_endpoint": "eosbp-0.atticlab.net:4321",
+      "bnet_endpoint": "eosbp-0.atticlab.net:4321"
+    },   
+    {
+      "location": {
+        "name": "Kyiv",
+        "country": "UA",
+        "latitude": 50.418493,
+        "longitude": 30.517631
+      },
+      "node_type": "full",
+      "api_endpoint": "http://eosbp-0.atticlab.net",      
       "ssl_endpoint": "https://eosbp.atticlab.net"
     }
   ]
