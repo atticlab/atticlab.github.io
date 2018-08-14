@@ -52,7 +52,7 @@
       },
       "node_type": "seed",
       "p2p_endpoint": "eosbp-0.atticlab.net:9876",
-      "bnet_endpoint": "eosbp-0.atticlab.net:4321"
+      "bnet_endpoint": ""
     },   
     {
       "location": {
