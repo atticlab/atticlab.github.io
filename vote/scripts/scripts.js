@@ -1,4 +1,4 @@
-var node_host = "https://eosbp.atticlab.net"
+var node_host = "https://eosbp-de.atticlab.net"
 var ii = 0;
 var favorites = [{
     owner: 'atticlabeosb',
