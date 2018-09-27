@@ -76,7 +76,7 @@ $(function() {
     $(this).off("click").toggleClass("active")
   }),
   $("#close-vote").click(function() {
-    $(".vote").addClass("d-none")
+    $(".vote").addClass("d-none").attr("data-closed", "true");
   })
 }), $.fn.isInViewport = function() {
   if ($(this).length > 0) {
@@ -90,17 +90,27 @@ $(function() {
 var isScrollInit = !1;
 $(window).on("scroll", function() {
   $(".stats").isInViewport() && !isScrollInit && (animateValue("cosultations", 0, 232, 6e3), animateValue("clients", 0, 180, 6e3), animateValue("website", 0, 46, 6e3), animateValue("prjs", 0, 86, 6e3), isScrollInit = !0)
-}), $("#toggle").click(function() {
-  $(this).toggleClass("active"), $("#overlay").toggleClass("open"), $(".wrapper").toggleClass("overflow-hidden"), $(".vote").addClass("d-none")
-}), $(function() {
-  $(".nav-tab").click(function() {
+});
+
+$("#toggle").click(function () {
+  $(this).toggleClass("active");
+  $("#overlay").toggleClass("open");
+  $(".wrapper").toggleClass("overflow-hidden");
+  if(!$(".vote").attr("data-closed")) {
+    $(".vote").toggleClass("d-none");
+  }
+});
+
+$(function () {
+  $(".nav-tab").click(function () {
     var e = $(this).attr("aria-controls");
     $("#show-more-btn").attr("data-type", e)
-  }), $("#show-more-btn").click(function() {
+  }), $("#show-more-btn").click(function () {
     var e = $(this).attr("data-type");
     $("#row-" + e + " .col-news:hidden").slice(0, 6).slideDown()
   })
 });
+
 var mouseX = 0,
   mouseY = 0,
   currentSectionEl = document.getElementsByClassName("section-top")[0];

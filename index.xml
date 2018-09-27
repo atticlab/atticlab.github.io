@@ -6,7 +6,7 @@
     <description>Recent content on Home | Atticlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 25 Sep 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
@@ -57,11 +57,11 @@
     </item>
     
     <item>
-      <title>EOS Stat by Attic Lab</title>
-      <link>/eos/eos-prjs/eostat/</link>
+      <title>MY EOS WALLET</title>
+      <link>/eos/eos-prjs/my-eos-wallet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/eos/eos-prjs/eostat/</guid>
+      <guid>/eos/eos-prjs/my-eos-wallet/</guid>
       <description></description>
     </item>
     
@@ -84,20 +84,20 @@
     </item>
     
     <item>
+      <title>Bohdan Opryshko</title>
+      <link>/team/opryshko/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/team/opryshko/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Middle PHP/Go Developer</title>
       <link>/hiring/middle-php-go-dev/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hiring/middle-php-go-dev/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Natalia Shevchenko</title>
-      <link>/team/shevchenko/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/team/shevchenko/</guid>
       <description></description>
     </item>
     
@@ -138,11 +138,11 @@
     </item>
     
     <item>
-      <title>Bohdan Opryshko</title>
-      <link>/team/opryshko/</link>
+      <title>Natalia Shevchenko</title>
+      <link>/team/shevchenko/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/team/opryshko/</guid>
+      <guid>/team/shevchenko/</guid>
       <description></description>
     </item>
     
@@ -206,6 +206,42 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/about/designer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/media/ram/</link>
+      <pubDate>Tue, 25 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/media/ram/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/media/munin/</link>
+      <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/media/munin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/media/eos-vs-stellar/</link>
+      <pubDate>Tue, 18 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/media/eos-vs-stellar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/media/eos-history/</link>
+      <pubDate>Tue, 11 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/media/eos-history/</guid>
       <description></description>
     </item>
     
@@ -432,29 +468,20 @@ During the ICO period, EOS tokens used Ethereum blockchain, however, starting on
     </item>
     
     <item>
-      <title>Attic lab EOS Wallet</title>
-      <link>/eos/eos-prjs/eos-wallet/</link>
+      <title>Attic lab Mobile EOS Wallet</title>
+      <link>/eos/eos-prjs/mobile-eos-wallet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/eos/eos-prjs/eos-wallet/</guid>
+      <guid>/eos/eos-prjs/mobile-eos-wallet/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>EOScanner</title>
-      <link>/eos/eos-prjs/eoscanner/</link>
+      <title>Promoteos</title>
+      <link>/eos/eos-prjs/promoteos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/eos/eos-prjs/eoscanner/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Konstantin Oleshko</title>
-      <link>/team/oleshko/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/team/oleshko/</guid>
+      <guid>/eos/eos-prjs/promoteos/</guid>
       <description></description>
     </item>
     
