@@ -10236,6 +10236,25 @@ body {
   color: #00ead4;
 }
 
+/*  New index block with projects */
+.img-block {
+  width: 100%;
+  height: auto;
+}
+
+.last-projects {
+  padding-bottom: 190px;
+}
+
+.img-link {
+  display: block;
+  text-align: center;
+}
+
+.last-projects__title {
+  margin-bottom: 70px;
+}
+
 @media(max-width: 1199px) {
   .threeD-txt--eos {
     font-size: 6em;
@@ -10268,6 +10287,10 @@ body {
   .btn--transparent {
     margin-bottom: 20px;
   }
+
+  .last-projects {
+    padding-bottom: 130px;
+  }
 }
 
 @media(max-width: 767px) {
@@ -10296,6 +10319,10 @@ body {
   .about__quote > p {
     margin-bottom: 20px;
   }
+
+  .last-projects {
+    padding-bottom: 55px;
+  }
 }
 
 @media(max-width: 565px) {
@@ -10306,8 +10333,16 @@ body {
   .section-top__subtitle--eos {
     font-size: 16px;
   }
-}
 
-.test-class {
-  background: transparent;
+  .last-projects {
+    padding-bottom: 40px;
+  }
+
+  .last-projects__title {
+    margin-bottom: 40px;
+  }
+
+  .img-block {
+    margin-bottom: 20px;
+  }
 }
