@@ -58,7 +58,7 @@
         "longitude": 30.517631
       },
       "node_type": "full",
-      "api_endpoint": "http://telos.atticlab.net",
+      "api_endpoint": "http://telos.atticlab.net:8888",
       "ssl_endpoint": "",
       "p2p_endpoint": "195.201.82.181:9876"
     }
