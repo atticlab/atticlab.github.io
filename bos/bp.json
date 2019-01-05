@@ -1,0 +1,64 @@
+{
+  "producer_account_name": "atticlabbsbp",
+  "producer_public_key": "Key: EOS8mAkoneoUyMAk27T6d9AggNiHFL1ui59A49VwGaoaf52bYb3aB",
+  "org": {
+    "candidate_name": "AtticLab",
+    "website": "https://atticlab.net",
+    "code_of_conduct":"https://atticlab.net/ownership/",
+    "ownership_disclosure":"https://atticlab.net/ownership/",
+    "email":"inbox@atticlab.net",
+    "branding": {
+      "logo_256":"https://atticlab.net/atticlab-logo-256.png",
+      "logo_1024":"https://atticlab.net/atticlab-logo-1000.png",
+      "logo_svg":"https://atticlab.net/atticlab-logo-1000.svg"
+    },
+    "location": {
+      "name": "Kiyv",
+      "country": "UA",
+      "latitude": 50.418493,
+      "longitude": 30.517631
+    },
+    "social": {
+      "steemit": "attic-lab",
+      "twitter": "atticlab_it",
+      "youtube": "AtticLab",
+      "facebook": "atticlab",
+      "github":"atticlab",
+      "reddit": "",
+      "keybase": "",
+      "telegram": "",
+      "wechat":""
+    }
+  },
+  "nodes": [
+    {
+      "location": {
+        "name": "Kiyv",
+        "country": "UA",
+        "latitude": 50.418493,
+        "longitude": 30.517631
+      },
+      "node_type": "producer"      
+    },
+    {
+      "location": {
+        "name": "Kiyv",
+        "country": "UA",
+        "latitude": 50.418493,
+        "longitude": 30.517631
+      },
+      "node_type": "seed",
+      "p2p_endpoint": "159.69.63.222:8899"
+    },
+    {
+      "location": {
+        "name": "Kiyv",
+        "country": "UA",
+        "latitude": 50.418493,
+        "longitude": 30.517631
+      },
+      "node_type": "full"
+    }
+  ]
+}
+
