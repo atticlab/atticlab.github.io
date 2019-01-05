@@ -48,7 +48,7 @@
         "longitude": 30.517631
       },
       "node_type": "seed",
-      "p2p_endpoint": "159.69.63.222:8899"
+      "p2p_endpoint": "159.69.63.222:10876"
     },
     {
       "location": {
