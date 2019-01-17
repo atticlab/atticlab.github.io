@@ -1,7 +1,6 @@
 {
   "producer_account_name": "atticlabeosb",
-  "producer_public_key": "EOS7LqudX6Ac4woGwTF9CvQKwrJhg3H7p3pScDoXj1Ws82mMZFQqf",
-  "org": {
+   "org": {
     "candidate_name": "AtticLab",
     "website": "https://atticlab.net",
     "code_of_conduct":"https://steemit.com/eos/@attic-lab/attic-lab-eos-block-producer-candidate",
