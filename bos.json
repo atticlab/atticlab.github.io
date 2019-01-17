@@ -1,7 +1,7 @@
 {
   "producer_account_name": "atticlabbosb",
   "org": {
-    "candidate_name": "AtticLab",
+    "candidate_name": "Attic Lab",
     "website": "https://atticlab.net",
     "code_of_conduct":"",
     "ownership_disclosure":"https://atticlab.net/ownership/",
@@ -47,8 +47,7 @@
         "longitude": 30.517631
       },
       "node_type": "seed",
-      "p2p_endpoint": "bos.atticlab.net:10987"
-      
+      "p2p_endpoint": "bos.atticlab.net:10987"      
     },
     {
       "location": {
