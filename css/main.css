@@ -51,7 +51,7 @@ button, hr, input {
 
 .dropdown-menu, .form-control, .modal-content, .popover {
   background-clip: padding-box
-}
+}.team__exp {
 
 .dropdown-menu, .nav, .navbar-nav {
   list-style: none
@@ -10168,6 +10168,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
+  text-align: center;
 }
 
 .team-member__top {
