@@ -1,6 +1,6 @@
 {
-    "name": "Package 1",
-    "description": "",
+    "name": "Simple",
+    "description": "Attic Lab DSP - fast, reliable, scalable plans",
     "dsp_json_uri": "https://atticlab.net/dsp.json",
     "logo":{
       "logo_256":"https://atticlab.net/atticlab-logo-256.png",
