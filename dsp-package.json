@@ -13,7 +13,7 @@
         },
         "performance":{
             "95": 500
-        },
+        }
     },
     "pinning":{
         "ttl": 2400,
