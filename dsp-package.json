@@ -1,6 +1,6 @@
 {
     "name": "Simple",
-    "description": "Attic Lab DSP - fast, reliable, scalable plans",
+    "description": "Attic Lab DSP - fast, reliable, scalable plans for DAPP developers",
     "dsp_json_uri": "https://atticlab.net/dsp.json",
     "logo":{
       "logo_256":"https://atticlab.net/atticlab-logo-256.png",
@@ -12,7 +12,7 @@
             "uptime_9s": 5
         },
         "performance":{
-            "95": 500,
+            "95": 500
         },
     },
     "pinning":{
