@@ -1,0 +1,65 @@
+{
+  "producer_account_name": "atticlab.m",
+  "producer_public_key": "EOS7LXGj93agKnst827662aioyQCvBMUNhSvtg7fui5NHvERcUxUX",
+  "org": {
+    "candidate_name": "AtticLab",
+    "website": "https://atticlab.net/meet",
+    "code_of_conduct": "https://atticlab.net/ownership/",
+    "ownership_disclosure": "https://atticlab.net/ownership/",
+    "email": "inbox@atticlab.net",
+    "phone":"TF Registry",
+    "branding":{
+      "logo_256":"https://atticlab.net/atticlab-logo-256.png",
+      "logo_1024":"https://atticlab.net/atticlab-logo-1000.png",
+      "logo_svg":"https://atticlab.net/atticlab-logo-1000.svg"
+    },
+    "location": {
+      "name": "Kiyv",
+      "country": "UA",
+      "latitude": 50.418493,
+      "longitude": 30.517631
+    },
+    "social": {
+      "steemit": "attic-lab",
+      "twitter": "atticlab_it",
+      "youtube": "AtticLab",
+      "facebook": "atticlab",
+      "github":"atticlab",
+      "reddit": "atticlab_it",
+      "keybase": "",
+      "telegram": "atticlabeosb",
+      "wechat":""
+    }
+  },
+  "nodes": [
+    {
+      "location": {
+        "name": "Kyiv",
+        "country": "UA",
+        "latitude": 50.418493,
+        "longitude": 30.517631
+      },
+      "node_type": "producer"
+    },
+    {
+      "location": {
+        "name": "Kyiv",
+        "country": "UA",
+        "latitude": 50.418493,
+        "longitude": 30.517631
+      },
+      "node_type": "seed",
+      "p2p_endpoint": "meetone.atticlab.net:6667"
+    },   
+    {
+      "location": {
+        "name": "Kyiv",
+        "country": "UA",
+        "latitude": 50.418493,
+        "longitude": 30.517631
+      },
+      "node_type": "full"
+    }
+  ]
+}
+
