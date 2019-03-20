@@ -48,16 +48,6 @@
         "latitude": 50.418493,
         "longitude": 30.517631
       },
-      "node_type": "seed",
-      "p2p_endpoint": "195.201.82.181:9876"
-    },
-    {
-      "location": {
-        "name": "Kiyv",
-        "country": "UA",
-        "latitude": 50.418493,
-        "longitude": 30.517631
-      },
       "node_type": "full",
       "api_endpoint": "http://telosapi.atticlab.net",
       "ssl_endpoint": "https://ssltelosapi.atticlab.net",
