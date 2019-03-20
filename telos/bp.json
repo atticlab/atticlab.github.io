@@ -60,7 +60,7 @@
       },
       "node_type": "full",
       "api_endpoint": "http://telosapi.atticlab.net",
-      "ssl_endpoint": "https://telosapi.atticlab.net",
+      "ssl_endpoint": "https://ssltelosapi.atticlab.net",
       "p2p_endpoint": "195.201.82.181:10876"
     }
   ]
