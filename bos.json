@@ -58,7 +58,7 @@
       },
       "node_type": "full",
       "api_endpoint": "http://bosapi.atticlab.net",
-      "ssl_endpoint": ""
+      "ssl_endpoint": "https://sslbosapi.atticlab.net"
     }
   ]
 }
