@@ -7646,6 +7646,9 @@ a.text-dark:focus, a.text-dark:hover {
 .icon-close:before {
   content: "\6e";
 }
+.icon-icon-reddit:before {
+  content: "\6f";
+}
 
 
 body {
@@ -7709,7 +7712,13 @@ body {
   color: #555;
   background: 0 0;
   padding: 0;
-  width: 97px
+  width: 97px;
+}
+
+.selector {
+  color: #555;
+  background: 0 0;
+  padding: 0;
 }
 
 .lang-selector:focus, .lang-selector:hover {
@@ -7730,7 +7739,7 @@ body {
 
 .ddwn-lang .dropdown-menu {
   padding: 0;
-  background: rgba(255, 255, 255, .7);
+  background: rgba(255, 255, 255, .9);
   box-shadow: 0 3px 20px 1px rgba(85, 85, 85, .2)
 }
 
@@ -8108,9 +8117,9 @@ body {
   align-items: center
 }
 
-.btn-container {
+/* .btn-container {
   display: none
-}
+} */
 
 @media (max-width:991px) {
   .logo__link {
@@ -8124,7 +8133,11 @@ body {
   }
 }
 
-@media (max-width:767px) {
+.btn-container {
+  display: none
+}
+
+@media (max-width:991px) {
   .header__nav, .lang-selector {
     display: none
   }
@@ -8181,8 +8194,8 @@ body {
 
 .overlay .overlay-menu {
   position: relative;
-  height: 70%;
-  top: 55%;
+  height: 45%;
+  top: 30%;
   -webkit-transform: translateY(-45%);
   transform: translateY(-45%);
   font-size: 22px;
@@ -8265,7 +8278,8 @@ body {
 
 .overlay-menu__socials {
   position: relative;
-  bottom: 10px
+  bottom: 10px;
+  padding-top: 15px;
 }
 
 .overlay-menu__socials>* {
@@ -8283,7 +8297,7 @@ body {
   text-decoration: none
 }
 
-@media (min-width:768px) {
+@media (min-width:992px) {
   .overlay {
     display: none
   }
@@ -8347,6 +8361,11 @@ body {
 
 .footer__logo, .footer__nav {
   margin-bottom: 35px
+}
+
+.footer__img {
+  max-width: 151px;
+  max-height: 154px;
 }
 
 .attach__txt {
@@ -8512,7 +8531,7 @@ body {
 }
 
 .icon-fb:before, .icon-in:before, .icon-steemit:before, .icon-github:before,
-.icon-twitter:before, .icon-medium:before, .icon-telegram:before {
+.icon-twitter:before, .icon-medium:before, .icon-telegram:before, .icon-icon-reddit:before {
   font-size: 18px;
   vertical-align: middle
 }
@@ -10163,6 +10182,11 @@ body {
   margin-bottom: 70px;
 }
 
+.team__member img {
+  max-width: 260px;
+  max-height: 170px;
+}
+
 .team__exp {
   color: #555555;
   font-size: 14px;
@@ -10344,5 +10368,12 @@ body {
 
   .img-block {
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .bp-selector {
+    display: inline-block;
+    font-size: 14px;
   }
 }
