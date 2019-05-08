@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-98871974-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -10,7 +10,7 @@
 
     gtag('config', 'UA-98871974-1');
   </script>
-  
+
   <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -26,7 +26,7 @@
   <noscript><img height="1" width="1" style="display:none"
                  src="https://www.facebook.com/tr?id=2192575201032219&ev=PageView&noscript=1"
   /></noscript>
-  
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -55,41 +55,46 @@
 
 <body>
   <div class="wrapper">
-    
+
 <div class="vote">
   <a href="/vote">Please, vote for us as an EOS Block Producer, we need your support to continue offering tools and services!</a>
   <span class="icon-close vote__icon" id="close-vote"></span>
 </div>
 
 
-    
+
 <div id="overlay" class="overlay">
   <nav class="overlay-menu">
     <ul class="overlay-menu__ul">
-      <li class="overlay-menu__li">
-        <a href="/eos/" class="overlay-menu__link">EOS</a>
-      </li>
-      <li class="overlay-menu__li">
-        <a href="/dsp/" class="overlay-menu__link">DSP</a>
-      </li>
-      <li class="overlay-menu__li">
-        <a href="/bos/" class="overlay-menu__link">BOS</a>
-      </li> 
-      <li class="overlay-menu__li">
-        <a href="/telos/" class="overlay-menu__link">TELOS</a>
-      </li> 
-      <li class="overlay-menu__li">
-        <a href="/cybex/" class="overlay-menu__link">CYBEX</a>
-      </li>
-      <li class="overlay-menu__li">
-        <a href="/iost/" class="overlay-menu__link">IOST</a>
-      </li>
       <li class="overlay-menu__li">
         <a href="/" class="overlay-menu__link">Home</a>
       </li>
       <li class="overlay-menu__li">
         <a href="/about/" class="overlay-menu__link">About us</a>
       </li>
+			<li class="overlay-menu__li">
+				<a href="/eos/" class="overlay-menu__link">EOS</a>
+			</li>
+			<li class="overlay-menu__li">
+				<a href="/dsp/" class="overlay-menu__link">DSP</a>
+			</li>
+			<li class="overlay-menu__li">
+				<a href="/bos/" class="overlay-menu__link">BOS</a>
+			</li>
+			<li class="overlay-menu__li">
+				<a href="/telos/" class="overlay-menu__link">TELOS</a>
+			</li>
+			<li class="overlay-menu__li">
+				<a href="/cybex/" class="overlay-menu__link">CYBEX</a>
+			</li>
+			<li class="overlay-menu__li">
+				<a href="/iost/" class="overlay-menu__link">IOST</a>
+			</li>
+			<li class="overlay-menu__li">
+				<a href="http://everstake.one/" class="overlay-menu__link" target="_blank">
+					Everstake
+				</a>
+			</li>
       <li class="overlay-menu__li">
         <a href="/our-work/" class="overlay-menu__link">Our work</a>
       </li>
@@ -108,7 +113,7 @@
 </div>
 
 
-    
+
 <header class="header header--white">
   <div class="container">
     <div class="logo">
@@ -117,33 +122,40 @@
       </a>
     </div>
     <nav class="nav header__nav">
-      <a href="http://atticpool.com/" class="nav__link" target="_blank">
-        Attic.Pool
-      </a>
-      <a href="/eos/" class="nav__link">
-        EOS
-      </a>
-    <a href="/dsp/" class="nav__link">
-      DSP
-    </a>
-    <a href="/bos/" class="nav__link">
-      BOS
-    </a>
-    <a href="/telos/" class="nav__link">
-      TELOS
-    </a>
-    <a href="/cybex/" class="nav__link">
-      CYBEX
-    </a>
-      <a href="/iost/" class="nav__link">
-      IOST
-      </a>
       <a href="/" class="nav__link">
         Home
       </a>
       <a href="/about/" class="nav__link">
         About us
       </a>
+  		<div class="dropdown ddwn-lang nav__link">
+  		  <button class="lang-selector dropdown-toggle w-auto" id="blockchainsBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  	      <span>Blockchains</span>
+  	    </button>
+  			 <div class="dropdown-menu" aria-labelledby="blockchainsBtn">
+  	 		   <a href="/eos/" class="dropdown-item nav__link">
+  	 	      EOS
+  	 	    </a>
+  	 		  <a href="/dsp/" class="dropdown-item nav__link">
+  	 	      DSP
+  	 	    </a>
+  	 		  <a href="/bos/" class="dropdown-item nav__link">
+  	 	      BOS
+  	 	    </a>
+  	 		  <a href="/telos/" class="dropdown-item nav__link">
+  	 	      TELOS
+  	 	    </a>
+  	 		  <a href="/cybex/" class="dropdown-item nav__link">
+  	 	      CYBEX
+  	 	    </a>
+  	 		  <a href="/iost/" class="dropdown-item nav__link">
+  	 	      IOST
+  	 	    </a>
+        </div>
+  	  </div>
+  		<a href="http://everstake.one/" class="nav__link" target="_blank">
+  			Everstake
+  		</a>
       <a href="/our-work/" class="nav__link">
         Our work
       </a>
@@ -154,7 +166,7 @@
         Contact us
       </a>
     </nav>
-    
+
     <div id="toggle" class="btn-container">
       <span class="span toggle__top"></span>
       <span class="span toggle__middle"></span>
@@ -204,9 +216,91 @@
               aria-labelledby="news-tab"
             >
               <div class="row" id="row-news">
-                
+
+                <div class="col-12 col-md-6 col-lg-4 col-news">
+
+  <div class="media-room__item">
+    <div class="media-room__ic">
+      <span class="icon-offer"></span>
+    </div>
+    <div class="news__item">
+      <a href="/news/ico-dead/" class="news__link">
+       ICO is dead, long live TTO.
+      </a>
+      <p class="news__txt">
+        At Attic Lab we think that retail investor participation in funding start-ups is of paramount importance for the blockchain sector to realise its full disruptive potential.
+      </p>
+      <div class="news__date">
+        Mar 22, 2019
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-12 col-md-6 col-lg-4 col-news">
+
+  <div class="media-room__item">
+    <div class="media-room__ic">
+      <span class="icon-offer"></span>
+    </div>
+    <div class="news__item">
+      <a href="/news/how-to-use-dsp/" class="news__link">
+How to Use Our Dsp-Package
+</a>
+      <p class="news__txt">
+        Attic Lab has become a dApp Service Provider on the DAPP Network. We provide reliable, scalable and secure services for EOS dApp developers.
+      </p>
+      <div class="news__date">
+        Mar 12, 2019
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-12 col-md-6 col-lg-4 col-news">
+
+  <div class="media-room__item">
+    <div class="media-room__ic">
+      <span class="icon-offer"></span>
+    </div>
+    <div class="news__item">
+      <a href="/news/mob-version-eos-wallet/" class="news__link">
+        Mobile version of MyEOSWallet
+      </a>
+      <p class="news__txt">
+       Attic Lab is happy to present a mobile version of MyEOSWallet.
+      </p>
+      <div class="news__date">
+        Feb 6, 2019
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-12 col-md-6 col-lg-4 col-news">
+
+  <div class="media-room__item">
+    <div class="media-room__ic">
+      <span class="icon-offer"></span>
+    </div>
+    <div class="news__item">
+      <a href="/news/chintai/" class="news__link">
+        Chintai Proxy Adds Attic Lab
+      </a>
+      <p class="news__txt">
+        We, Attic Lab, are happy to announce that
+        Chintai proxy
+        added us to their voting list.
+      </p>
+      <div class="news__date">
+        Jan 14, 2019
+      </div>
+    </div>
+  </div>
+</div>
+
                   <div class="col-12 col-md-6 col-lg-4 col-news">
-                    
+
 <div class="media-room__item">
   <div class="media-room__ic">
     <span class="icon-offer"></span>
@@ -225,9 +319,9 @@
 </div>
 
                   </div>
-                
+
                   <div class="col-12 col-md-6 col-lg-4 col-news">
-                    
+
 <div class="media-room__item">
   <div class="media-room__ic">
     <span class="icon-offer"></span>
@@ -246,9 +340,9 @@
 </div>
 
                   </div>
-                
+
                   <div class="col-12 col-md-6 col-lg-4 col-news">
-                    
+
 <div class="media-room__item">
   <div class="media-room__ic">
     <span class="icon-offer"></span>
@@ -267,9 +361,9 @@
 </div>
 
                   </div>
-                
+
                   <div class="col-12 col-md-6 col-lg-4 col-news">
-                    
+
 <div class="media-room__item">
   <div class="media-room__ic">
     <span class="icon-offer"></span>
@@ -288,9 +382,9 @@
 </div>
 
                   </div>
-                
+
                   <div class="col-12 col-md-6 col-lg-4 col-news">
-                    
+
 <div class="media-room__item">
   <div class="media-room__ic">
     <span class="icon-offer"></span>
@@ -309,9 +403,9 @@
 </div>
 
                   </div>
-                
+
                   <div class="col-12 col-md-6 col-lg-4 col-news">
-                    
+
 <div class="media-room__item">
   <div class="media-room__ic">
     <span class="icon-offer"></span>
@@ -330,9 +424,9 @@
 </div>
 
                   </div>
-                
+
                   <div class="col-12 col-md-6 col-lg-4 col-news">
-                    
+
 <div class="media-room__item">
   <div class="media-room__ic">
     <span class="icon-offer"></span>
@@ -351,9 +445,9 @@
 </div>
 
                   </div>
-                
+
                   <div class="col-12 col-md-6 col-lg-4 col-news">
-                    
+
 <div class="media-room__item">
   <div class="media-room__ic">
     <span class="icon-offer"></span>
@@ -372,9 +466,9 @@
 </div>
 
                   </div>
-                
+
                   <div class="col-12 col-md-6 col-lg-4 col-news">
-                    
+
 <div class="media-room__item">
   <div class="media-room__ic">
     <span class="icon-offer"></span>
@@ -393,7 +487,7 @@
 </div>
 
                   </div>
-                
+
               </div>
             </div>
 
@@ -404,9 +498,111 @@
               aria-labelledby="media-tab"
             >
               <div class="row" id="row-media">
-                
+
+                <div class="col-12 col-md-6 col-lg-4 col-news">
+                  <div class="media-room__item">
+                    <div class="media-room__ic">
+                      <span class="icon-link"></span>
+                    </div>
+                    <div class="news__item">
+                      <a href="https://www.youtube.com/watch?v=VAkzqef2U98&t=1s" class="news__link" target="_blank">
+                        PoS и DPoS алгоритмы консенсуса — Сергей Васильчук
+                      </a>
+
+                      <div class="news__date">
+                        March 16, 2019
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-news">
+                  <div class="media-room__item">
+                    <div class="media-room__ic">
+                      <span class="icon-link"></span>
+                    </div>
+                    <div class="news__item">
+                      <a href="https://www.youtube.com/watch?v=7DVQ7ueuB3g&list=LLbh04j9pFKEIxGk0qg5t9vw&index=5&t=0s" class="news__link" target="_blank">
+                        Сергей Васильчук про AtticLab, EOS, биржу Codex, отношение к крипте | Интервью с EOS Блок Продюсером
+                      </a>
+
+                      <div class="news__date">
+                        March 12, 2019
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-news">
+                  <div class="media-room__item">
+                    <div class="media-room__ic">
+                      <span class="icon-link"></span>
+                    </div>
+                    <div class="news__item">
+                      <a href="https://www.youtube.com/watch?v=7bx8CHkWSAs&t=8s" class="news__link" target="_blank">
+                        MEET.ONE Sidechain BP Series AtticLab Vitaliy
+                      </a>
+
+                      <div class="news__date">
+                        March 12, 2019
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-news">
+                  <div class="media-room__item">
+                    <div class="media-room__ic">
+                      <span class="icon-link"></span>
+                    </div>
+                    <div class="news__item">
+                      <a href="https://bihu.com/article/1560624807" class="news__link" target="_blank">
+                        海外节点在中国：Attic Lab 丨 HelloMedia
+                      </a>
+
+                      <div class="news__date">
+                        March 08, 2019
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-news">
+                  <div class="media-room__item">
+                    <div class="media-room__ic">
+                      <span class="icon-link"></span>
+                    </div>
+                    <div class="news__item">
+                      <a href="https://www.youtube.com/watch?v=WYowFSU3R5I" class="news__link" target="_blank">
+                        Видео «Про Биткоин». Гость выпуска: Сергей Васильчук - Основатель и управляющий компании Attic Lab.
+                      </a>
+
+                      <div class="news__date">
+                        Oct 30, 2018
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-news">
+                  <div class="media-room__item">
+                    <div class="media-room__ic">
+                      <span class="icon-link"></span>
+                    </div>
+                    <div class="news__item">
+                      <a href="https://www.youtube.com/watch?v=gwiPO2P97v0&list=LLbh04j9pFKEIxGk0qg5t9vw&index=45&t=1s" class="news__link" target="_blank">
+                        Хто будує екосистему ЕОS в Україні?
+                      </a>
+
+                      <div class="news__date">
+                        Aug 02, 2018
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                   <div class="col-12 col-md-6 col-lg-4 col-news">
-                    
+
 <div class="media-room__item">
   <div class="media-room__ic">
     <span class="icon-link"></span>
@@ -423,9 +619,9 @@
 </div>
 
                   </div>
-                
+
                   <div class="col-12 col-md-6 col-lg-4 col-news">
-                    
+
 <div class="media-room__item">
   <div class="media-room__ic">
     <span class="icon-link"></span>
@@ -442,9 +638,9 @@
 </div>
 
                   </div>
-                
+
                   <div class="col-12 col-md-6 col-lg-4 col-news">
-                    
+
 <div class="media-room__item">
   <div class="media-room__ic">
     <span class="icon-link"></span>
@@ -461,9 +657,9 @@
 </div>
 
                   </div>
-                
+
                   <div class="col-12 col-md-6 col-lg-4 col-news">
-                    
+
 <div class="media-room__item">
   <div class="media-room__ic">
     <span class="icon-link"></span>
@@ -480,16 +676,16 @@
 </div>
 
                   </div>
-                
+
                   <div class="col-12 col-md-6 col-lg-4 col-news">
-                    
+
 <div class="media-room__item">
   <div class="media-room__ic">
     <span class="icon-link"></span>
   </div>
   <div class="news__item">
     <a href="https://twitter.com/eosvzla/status/1012798477745745921" class="news__link" target="_blank">
-      EOS Venezuela and Attic Lab EOS partnership 
+      EOS Venezuela and Attic Lab EOS partnership
     </a>
 
     <div class="news__date">
@@ -499,9 +695,9 @@
 </div>
 
                   </div>
-                
+
                   <div class="col-12 col-md-6 col-lg-4 col-news">
-                    
+
 <div class="media-room__item">
   <div class="media-room__ic">
     <span class="icon-link"></span>
@@ -518,9 +714,9 @@
 </div>
 
                   </div>
-                
+
                   <div class="col-12 col-md-6 col-lg-4 col-news">
-                    
+
 <div class="media-room__item">
   <div class="media-room__ic">
     <span class="icon-link"></span>
@@ -537,9 +733,9 @@
 </div>
 
                   </div>
-                
+
                   <div class="col-12 col-md-6 col-lg-4 col-news">
-                    
+
 <div class="media-room__item">
   <div class="media-room__ic">
     <span class="icon-link"></span>
@@ -556,9 +752,9 @@
 </div>
 
                   </div>
-                
+
                   <div class="col-12 col-md-6 col-lg-4 col-news">
-                    
+
 <div class="media-room__item">
   <div class="media-room__ic">
     <span class="icon-link"></span>
@@ -575,9 +771,9 @@
 </div>
 
                   </div>
-                
+
                   <div class="col-12 col-md-6 col-lg-4 col-news">
-                    
+
 <div class="media-room__item">
   <div class="media-room__ic">
     <span class="icon-link"></span>
@@ -594,9 +790,9 @@
 </div>
 
                   </div>
-                
+
                   <div class="col-12 col-md-6 col-lg-4 col-news">
-                    
+
 <div class="media-room__item">
   <div class="media-room__ic">
     <span class="icon-link"></span>
@@ -613,9 +809,9 @@
 </div>
 
                   </div>
-                
+
                   <div class="col-12 col-md-6 col-lg-4 col-news">
-                    
+
 <div class="media-room__item">
   <div class="media-room__ic">
     <span class="icon-link"></span>
@@ -632,7 +828,7 @@
 </div>
 
                   </div>
-                
+
               </div>
             </div>
 
@@ -649,7 +845,7 @@
       </div>
     </main>
 
-    
+
 <footer class="footer">
   <div class="pattern"></div>
   <div class="container">
@@ -657,24 +853,49 @@
       <img src="/img/logo-footer.png" alt="Atticlab" class="footer__img">
     </div>
     <nav class="nav footer__nav">
-      <a href="/eos/" class="nav__link">
-        EOS
-      </a>
-      <a href="/" class="nav__link">
-        Home
-      </a>
-      <a href="/about/" class="nav__link">
-        About us
-      </a>
-      <a href="/our-work/" class="nav__link">
-        Our work
-      </a>
-      <a href="/media-room/" class="nav__link">
-        Media room
-      </a>
-      <a href="/contact-us/" class="nav__link">
-        Contact us
-      </a>
+			<a href="/" class="nav__link">
+				Home
+			</a>
+			<a href="/about/" class="nav__link">
+				About us
+			</a>
+			<div class="dropdown ddwn-lang nav__link">
+				<button class="lang-selector bp-selector dropdown-toggle w-auto" id="blockchainsBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<span>Blockchains</span>
+				</button>
+				 <div class="dropdown-menu" aria-labelledby="blockchainsBtn">
+					 <a href="/eos/" class="dropdown-item nav__link">
+						EOS
+					</a>
+					<a href="/dsp/" class="dropdown-item nav__link">
+						DSP
+					</a>
+					<a href="/bos/" class="dropdown-item nav__link">
+						BOS
+					</a>
+					<a href="/telos/" class="dropdown-item nav__link">
+						TELOS
+					</a>
+					<a href="/cybex/" class="dropdown-item nav__link">
+						CYBEX
+					</a>
+					<a href="/iost/" class="dropdown-item nav__link">
+						IOST
+					</a>
+				</div>
+			</div>
+			<a href="http://everstake.one/" class="nav__link" target="_blank">
+				Everstake
+			</a>
+			<a href="/our-work/" class="nav__link">
+				Our work
+			</a>
+			<a href="/media-room/" class="nav__link">
+				Media room
+			</a>
+			<a href="/contact-us/" class="nav__link">
+				Contact us
+			</a>
     </nav>
     <a href="/about/" class="btn">Join our team</a>
     <div class="footer__copyright">
@@ -695,6 +916,10 @@
          target="_blank" class="footer__socials-link">
         <span class="icon-steemit"></span>
       </a><a
+         href="https://www.reddit.com/user/atticlab_it"
+         target="_blank" class="footer__socials-link">
+        <span class="icon-icon-reddit"></span>
+      </a><a
          href="https://www.facebook.com/atticlab/"
          target="_blank" class="footer__socials-link">
         <span class="icon-fb"></span>
@@ -707,7 +932,7 @@
         target="_blank" class="footer__socials-link">
           <span class="icon-twitter"></span>
       </a><a
-        href="https://medium.com/@attic.it.lab"
+        href="https://medium.com/eosatticlab"
         target="_blank" class="footer__socials-link">
           <span class="icon-medium"></span>
       </a><a
@@ -715,7 +940,7 @@
         target="_blank" class="footer__socials-link">
           <span class="icon-github"></span>
       </a><a
-        href="https://t.me/joinchat/BZDV4UjSsrANT7wkfvreew"
+        href="https://t.me/atticlabeosb"
         target="_blank" class="footer__socials-link">
           <span class="icon-telegram"></span>
           </a>

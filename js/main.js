@@ -68,13 +68,13 @@ function initPattern(e) {
   t(e), i()
 }
 $(function() {
-  $(".dropdown-menu .dropdown-item").click(function() {
-    $(".lang-selector span:first-child").text($(this).text()), $(".lang-selecto span:first-child").val($(this).text())
-  }), $(".list__item").click(function() {
-    $(this).toggleClass("active")
-  }), $(".list__item.hiring__list-item").click(function() {
-    $(this).off("click").toggleClass("active")
-  }),
+  // $(".dropdown-menu .dropdown-item").click(function() {
+  //   $(".lang-selector span:first-child").text($(this).text()), $(".lang-selecto span:first-child").val($(this).text())
+  // }), $(".list__item").click(function() {
+  //   $(this).toggleClass("active")
+  // }), $(".list__item.hiring__list-item").click(function() {
+  //   $(this).off("click").toggleClass("active")
+  // }),
   $("#close-vote").click(function() {
     $(".vote").addClass("d-none").attr("data-closed", "true");
   })
