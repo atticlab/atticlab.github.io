@@ -8700,6 +8700,7 @@ body {
 
 .section-top {
   height: 100vh;
+  min-height: 550px;
   width: 100%;
   position: relative;
   text-align: center
@@ -8716,7 +8717,8 @@ body {
 .section-top__title {
   font-size: 38px;
   font-weight: 700;
-  text-transform: uppercase
+  text-transform: uppercase;
+  color: #555;
 }
 
 .section-top__subtitle {
