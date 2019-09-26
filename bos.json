@@ -12,7 +12,7 @@
       "logo_svg":"https://atticlab.net/atticlab-logo-1000.svg"
     },
     "location": {
-      "name": "Kiyv",
+      "name": "Kyiv",
       "country": "UA",
       "latitude": 50.418493,
       "longitude": 30.517631
@@ -32,7 +32,7 @@
   "nodes": [
     {
       "location": {
-        "name": "Kiyv",
+        "name": "Kyiv",
         "country": "UA",
         "latitude": 50.418493,
         "longitude": 30.517631
@@ -41,7 +41,7 @@
     },
     {
       "location": {
-        "name": "Kiyv",
+        "name": "Kyiv",
         "country": "UA",
         "latitude": 50.418493,
         "longitude": 30.517631
@@ -51,7 +51,7 @@
     },
     {
       "location": {
-        "name": "Kiyv",
+        "name": "Kyiv",
         "country": "UA",
         "latitude": 50.418493,
         "longitude": 30.517631
