@@ -51,6 +51,7 @@
       },
       "node_type": "seed",
       "p2p_endpoint": "eosbp-0.atticlab.net:9876",
+      "p2p_endpoint": "eosbp-1.atticlab.net:9876",
       "bnet_endpoint": ""
     },   
     {
@@ -62,7 +63,6 @@
       },
       "node_type": "full",
       "api_endpoint": "http://eosbp-0.atticlab.net",
-      "api_endpoint": "http://eosbp-1.atticlab.net",
       "ssl_endpoint": "https://eosbp.atticlab.net"
     }
   ]
