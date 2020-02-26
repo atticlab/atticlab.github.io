@@ -60,17 +60,6 @@
         "latitude": 50.418493,
         "longitude": 30.517631
       },
-      "node_type": "seed",
-      "p2p_endpoint": "eosbp-1.atticlab.net:9876",
-      "bnet_endpoint": ""
-    },
-    {
-      "location": {
-        "name": "Kyiv",
-        "country": "UA",
-        "latitude": 50.418493,
-        "longitude": 30.517631
-      },
       "node_type": "full",
       "api_endpoint": "http://eosbp-0.atticlab.net",
       "ssl_endpoint": "https://eosbp.atticlab.net"
