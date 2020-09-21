@@ -60,8 +60,12 @@
         "latitude": 50.418493,
         "longitude": 30.517631
       },
-      "node_type": "full",
-      "api_endpoint": "http://eosbp-0.atticlab.net",
+      "node_type": "query",
+      "features": [
+      "chain-api",
+      "account-query"
+      ],
+      "api_endpoint": "http://eosbp.atticlab.net",
       "ssl_endpoint": "https://eosbp.atticlab.net"
     }
   ]
