@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[10],{327:function(n,o,w){n.exports=w.p+"img/owner.a45cf97.jpg"}}]);
